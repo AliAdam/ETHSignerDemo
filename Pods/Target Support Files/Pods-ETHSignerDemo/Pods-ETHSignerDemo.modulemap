@@ -1,0 +1,6 @@
+framework module Pods_ETHSignerDemo {
+  umbrella header "Pods-ETHSignerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

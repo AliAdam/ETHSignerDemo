@@ -8,13 +8,12 @@
 
 import UIKit
 
-@UIApplicationMain
+//@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        startNetworkMonitor()
         return true
     }
 
@@ -32,6 +31,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func applicationDidEnterBackground(_ application: UIApplication) {
+         stopNetworkMonitor()
+     }
 
+     func applicationWillEnterForeground(_ application: UIApplication) {
+         startNetworkMonitor()
+     }
+
+     func applicationDidBecomeActive(_ application: UIApplication) {
+         startNetworkMonitor()
+     }
 }
 
+extension AppDelegate {
+
+    /// Starts monitoring the network availability status
+    private func startNetworkMonitor() {
+        ReachabilityManager.shared.startMonitoring()
+    }
+
+    /// Stop monitoring the network availability status
+    private func stopNetworkMonitor() {
+        ReachabilityManager.shared.stopMonitoring()
+    }
+
+}

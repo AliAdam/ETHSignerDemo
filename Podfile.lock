@@ -1,0 +1,70 @@
+PODS:
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - CryptoSwift (1.0.0)
+  - PromiseKit (6.8.4):
+    - PromiseKit/CorePromise (= 6.8.4)
+    - PromiseKit/Foundation (= 6.8.4)
+    - PromiseKit/UIKit (= 6.8.4)
+  - PromiseKit/CorePromise (6.8.4)
+  - PromiseKit/Foundation (6.8.4):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.4):
+    - PromiseKit/CorePromise
+  - ReachabilitySwift (5.0.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - secp256k1_swift (1.0.3)
+  - SipHash (1.2.2)
+  - Starscream (3.1.0)
+  - SwiftLint (0.35.0)
+  - web3swift (2.1.6):
+    - BigInt (= 3.1)
+    - CryptoSwift (= 1.0.0)
+    - PromiseKit (= 6.8.4)
+    - secp256k1_swift (= 1.0.3)
+    - Starscream (= 3.1.0)
+
+DEPENDENCIES:
+  - ReachabilitySwift (= 5.0.0)
+  - RxCocoa (= 5.0.0)
+  - RxSwift (= 5.0.0)
+  - SwiftLint (= 0.35.0)
+  - web3swift (= 2.1.6)
+
+SPEC REPOS:
+  trunk:
+    - BigInt
+    - CryptoSwift
+    - PromiseKit
+    - ReachabilitySwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - secp256k1_swift
+    - SipHash
+    - Starscream
+    - SwiftLint
+    - web3swift
+
+SPEC CHECKSUMS:
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  secp256k1_swift: 4fc5c4b2d2c6d21ee8ccb868cdc92da12f38bed9
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  web3swift: 6db59e73e2bcb99dde081088d0242382155690c9
+
+PODFILE CHECKSUM: 86192af30dd69ca10ebb27fbb2da22fff639aff9
+
+COCOAPODS: 1.8.4
