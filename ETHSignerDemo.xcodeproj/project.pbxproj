@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		418E35BD235B6B5F00D6EB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E35BC235B6B5F00D6EB3E /* AppDelegate.swift */; };
+		418E35BF235B6B5F00D6EB3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E35BE235B6B5F00D6EB3E /* SceneDelegate.swift */; };
+		418E35C1235B6B5F00D6EB3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E35C0235B6B5F00D6EB3E /* ViewController.swift */; };
+		418E35C4235B6B5F00D6EB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418E35C2235B6B5F00D6EB3E /* Main.storyboard */; };
+		418E35C6235B6B6100D6EB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418E35C5235B6B6100D6EB3E /* Assets.xcassets */; };
+		418E35C9235B6B6100D6EB3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418E35C7235B6B6100D6EB3E /* LaunchScreen.storyboard */; };
+		418E35D4235B6B6100D6EB3E /* ETHSignerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E35D3235B6B6100D6EB3E /* ETHSignerDemoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		418E35D0235B6B6100D6EB3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418E35B1235B6B5F00D6EB3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418E35B8235B6B5F00D6EB3E;
+			remoteInfo = ETHSignerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		418E35B9235B6B5F00D6EB3E /* ETHSignerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETHSignerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		418E35BC235B6B5F00D6EB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		418E35BE235B6B5F00D6EB3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		418E35C0235B6B5F00D6EB3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		418E35C3235B6B5F00D6EB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		418E35C5235B6B6100D6EB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		418E35C8235B6B6100D6EB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		418E35CA235B6B6100D6EB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418E35CF235B6B6100D6EB3E /* ETHSignerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETHSignerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418E35D3235B6B6100D6EB3E /* ETHSignerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHSignerDemoTests.swift; sourceTree = "<group>"; };
+		418E35D5235B6B6100D6EB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418E35B6235B6B5F00D6EB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418E35CC235B6B6100D6EB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		418E35B0235B6B5F00D6EB3E = {
+			isa = PBXGroup;
+			children = (
+				418E35BB235B6B5F00D6EB3E /* ETHSignerDemo */,
+				418E35D2235B6B6100D6EB3E /* ETHSignerDemoTests */,
+				418E35BA235B6B5F00D6EB3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		418E35BA235B6B5F00D6EB3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418E35B9235B6B5F00D6EB3E /* ETHSignerDemo.app */,
+				418E35CF235B6B6100D6EB3E /* ETHSignerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418E35BB235B6B5F00D6EB3E /* ETHSignerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				418E35BC235B6B5F00D6EB3E /* AppDelegate.swift */,
+				418E35BE235B6B5F00D6EB3E /* SceneDelegate.swift */,
+				418E35C0235B6B5F00D6EB3E /* ViewController.swift */,
+				418E35C2235B6B5F00D6EB3E /* Main.storyboard */,
+				418E35C5235B6B6100D6EB3E /* Assets.xcassets */,
+				418E35C7235B6B6100D6EB3E /* LaunchScreen.storyboard */,
+				418E35CA235B6B6100D6EB3E /* Info.plist */,
+			);
+			path = ETHSignerDemo;
+			sourceTree = "<group>";
+		};
+		418E35D2235B6B6100D6EB3E /* ETHSignerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				418E35D3235B6B6100D6EB3E /* ETHSignerDemoTests.swift */,
+				418E35D5235B6B6100D6EB3E /* Info.plist */,
+			);
+			path = ETHSignerDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		418E35B8235B6B5F00D6EB3E /* ETHSignerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418E35D8235B6B6100D6EB3E /* Build configuration list for PBXNativeTarget "ETHSignerDemo" */;
+			buildPhases = (
+				418E35B5235B6B5F00D6EB3E /* Sources */,
+				418E35B6235B6B5F00D6EB3E /* Frameworks */,
+				418E35B7235B6B5F00D6EB3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETHSignerDemo;
+			productName = ETHSignerDemo;
+			productReference = 418E35B9235B6B5F00D6EB3E /* ETHSignerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		418E35CE235B6B6100D6EB3E /* ETHSignerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418E35DB235B6B6100D6EB3E /* Build configuration list for PBXNativeTarget "ETHSignerDemoTests" */;
+			buildPhases = (
+				418E35CB235B6B6100D6EB3E /* Sources */,
+				418E35CC235B6B6100D6EB3E /* Frameworks */,
+				418E35CD235B6B6100D6EB3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418E35D1235B6B6100D6EB3E /* PBXTargetDependency */,
+			);
+			name = ETHSignerDemoTests;
+			productName = ETHSignerDemoTests;
+			productReference = 418E35CF235B6B6100D6EB3E /* ETHSignerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418E35B1235B6B5F00D6EB3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = AliAdam;
+				TargetAttributes = {
+					418E35B8235B6B5F00D6EB3E = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					418E35CE235B6B6100D6EB3E = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 418E35B8235B6B5F00D6EB3E;
+					};
+				};
+			};
+			buildConfigurationList = 418E35B4235B6B5F00D6EB3E /* Build configuration list for PBXProject "ETHSignerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 418E35B0235B6B5F00D6EB3E;
+			productRefGroup = 418E35BA235B6B5F00D6EB3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				418E35B8235B6B5F00D6EB3E /* ETHSignerDemo */,
+				418E35CE235B6B6100D6EB3E /* ETHSignerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		418E35B7235B6B5F00D6EB3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418E35C9235B6B6100D6EB3E /* LaunchScreen.storyboard in Resources */,
+				418E35C6235B6B6100D6EB3E /* Assets.xcassets in Resources */,
+				418E35C4235B6B5F00D6EB3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418E35CD235B6B6100D6EB3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418E35B5235B6B5F00D6EB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418E35C1235B6B5F00D6EB3E /* ViewController.swift in Sources */,
+				418E35BD235B6B5F00D6EB3E /* AppDelegate.swift in Sources */,
+				418E35BF235B6B5F00D6EB3E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418E35CB235B6B6100D6EB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418E35D4235B6B6100D6EB3E /* ETHSignerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		418E35D1235B6B6100D6EB3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418E35B8235B6B5F00D6EB3E /* ETHSignerDemo */;
+			targetProxy = 418E35D0235B6B6100D6EB3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		418E35C2235B6B5F00D6EB3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418E35C3235B6B5F00D6EB3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		418E35C7235B6B6100D6EB3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418E35C8235B6B6100D6EB3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		418E35D6235B6B6100D6EB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		418E35D7235B6B6100D6EB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418E35D9235B6B6100D6EB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZMXQFTMS2M;
+				INFOPLIST_FILE = ETHSignerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AliAdam.ETHSignerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		418E35DA235B6B6100D6EB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZMXQFTMS2M;
+				INFOPLIST_FILE = ETHSignerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AliAdam.ETHSignerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		418E35DC235B6B6100D6EB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZMXQFTMS2M;
+				INFOPLIST_FILE = ETHSignerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AliAdam.ETHSignerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETHSignerDemo.app/ETHSignerDemo";
+			};
+			name = Debug;
+		};
+		418E35DD235B6B6100D6EB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZMXQFTMS2M;
+				INFOPLIST_FILE = ETHSignerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AliAdam.ETHSignerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETHSignerDemo.app/ETHSignerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418E35B4235B6B5F00D6EB3E /* Build configuration list for PBXProject "ETHSignerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418E35D6235B6B6100D6EB3E /* Debug */,
+				418E35D7235B6B6100D6EB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418E35D8235B6B6100D6EB3E /* Build configuration list for PBXNativeTarget "ETHSignerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418E35D9235B6B6100D6EB3E /* Debug */,
+				418E35DA235B6B6100D6EB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418E35DB235B6B6100D6EB3E /* Build configuration list for PBXNativeTarget "ETHSignerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418E35DC235B6B6100D6EB3E /* Debug */,
+				418E35DD235B6B6100D6EB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418E35B1235B6B5F00D6EB3E /* Project object */;
+}
