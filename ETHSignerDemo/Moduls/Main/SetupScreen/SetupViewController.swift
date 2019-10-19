@@ -44,10 +44,11 @@ private extension SetupViewController {
         handleViewModelKeyStoreSbj()
         privatKeyTXTF.rx.text.orEmpty.bind(to: viewModel.privatKey).disposed(by: disposeBag)
         viewModel.isValid.bind(to: doneBTN.rx.isEnabled).disposed(by: disposeBag)
-        doneBTN.rx.tap.subscribe(onNext: { [unowned self] in
+        doneBTN.rx.tap.subscribe(onNext: { _ in
             self.hideKeyBoard()
             self.viewModel.createKeyStore()
         }).disposed(by: disposeBag)
+
     }
     /// handel error msg from viewModel
     func handleViewModelErrors() {
@@ -69,6 +70,7 @@ private extension SetupViewController {
     func handleViewModelKeyStoreSbj() {
 
         viewModel.keyStoreSbj.subscribe(onNext: { keystore in
+            self.hideKeyBoard()
             self.router.navigateToAccountScreen(keystore)
         }).disposed(by: disposeBag)
     }
