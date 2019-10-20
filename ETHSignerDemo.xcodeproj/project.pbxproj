@@ -17,6 +17,20 @@
 		41573FBE235B9EA7005197BB /* AccountBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41573FBA235B9EA7005197BB /* AccountBuilder.swift */; };
 		41573FBF235B9EA7005197BB /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41573FBB235B9EA7005197BB /* AccountViewModel.swift */; };
 		41573FC1235BA9A9005197BB /* BalanceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41573FC0235BA9A9005197BB /* BalanceRepository.swift */; };
+		41662601235CC146008DD38C /* SigningRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416625FD235CC146008DD38C /* SigningRouter.swift */; };
+		41662602235CC146008DD38C /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416625FE235CC146008DD38C /* SigningViewController.swift */; };
+		41662603235CC146008DD38C /* SigningBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416625FF235CC146008DD38C /* SigningBuilder.swift */; };
+		41662604235CC146008DD38C /* SigningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662600235CC146008DD38C /* SigningViewModel.swift */; };
+		41662606235CC29C008DD38C /* Signing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41662605235CC29C008DD38C /* Signing.storyboard */; };
+		41662608235CCF49008DD38C /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662607235CCF49008DD38C /* QRCodeGenerator.swift */; };
+		4166260D235CD230008DD38C /* SignatureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662609235CD22F008DD38C /* SignatureRouter.swift */; };
+		4166260E235CD230008DD38C /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166260A235CD22F008DD38C /* SignatureViewController.swift */; };
+		4166260F235CD230008DD38C /* SignatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166260B235CD22F008DD38C /* SignatureBuilder.swift */; };
+		41662610235CD230008DD38C /* SignatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166260C235CD22F008DD38C /* SignatureViewModel.swift */; };
+		41662616235CDDDE008DD38C /* VerificationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662612235CDDDD008DD38C /* VerificationBuilder.swift */; };
+		41662617235CDDDE008DD38C /* VerificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662613235CDDDE008DD38C /* VerificationRouter.swift */; };
+		41662618235CDDDE008DD38C /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662614235CDDDE008DD38C /* VerificationViewController.swift */; };
+		41662619235CDDDE008DD38C /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662615235CDDDE008DD38C /* VerificationViewModel.swift */; };
 		418E35BD235B6B5F00D6EB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E35BC235B6B5F00D6EB3E /* AppDelegate.swift */; };
 		418E35BF235B6B5F00D6EB3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E35BE235B6B5F00D6EB3E /* SceneDelegate.swift */; };
 		418E35C6235B6B6100D6EB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418E35C5235B6B6100D6EB3E /* Assets.xcassets */; };
@@ -41,6 +55,8 @@
 		418E3655235B6EC100D6EB3E /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E3621235B6EC100D6EB3E /* SplashViewModel.swift */; };
 		418E3656235B6EC100D6EB3E /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E3622235B6EC100D6EB3E /* SplashRouter.swift */; };
 		418E3657235B6EC100D6EB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418E3624235B6EC100D6EB3E /* Main.storyboard */; };
+		41D548FF235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D548FE235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift */; };
+		41D54901235CFFF00099D4A2 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D54900235CFFF00099D4A2 /* UIButtonExtension.swift */; };
 		67A4862E77287E2F738E6AC2 /* Pods_ETHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1392794E76A9348DEDF337 /* Pods_ETHCore.framework */; };
 		7216AC26235C39DA00CBE5D3 /* ETHCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7216AC24235C39DA00CBE5D3 /* ETHCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7216AC29235C39DA00CBE5D3 /* ETHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216AC22235C39DA00CBE5D3 /* ETHCore.framework */; };
@@ -91,6 +107,20 @@
 		41573FBA235B9EA7005197BB /* AccountBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBuilder.swift; sourceTree = "<group>"; };
 		41573FBB235B9EA7005197BB /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		41573FC0235BA9A9005197BB /* BalanceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceRepository.swift; sourceTree = "<group>"; };
+		416625FD235CC146008DD38C /* SigningRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningRouter.swift; sourceTree = "<group>"; };
+		416625FE235CC146008DD38C /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
+		416625FF235CC146008DD38C /* SigningBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningBuilder.swift; sourceTree = "<group>"; };
+		41662600235CC146008DD38C /* SigningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewModel.swift; sourceTree = "<group>"; };
+		41662605235CC29C008DD38C /* Signing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signing.storyboard; sourceTree = "<group>"; };
+		41662607235CCF49008DD38C /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		41662609235CD22F008DD38C /* SignatureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureRouter.swift; sourceTree = "<group>"; };
+		4166260A235CD22F008DD38C /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		4166260B235CD22F008DD38C /* SignatureBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureBuilder.swift; sourceTree = "<group>"; };
+		4166260C235CD22F008DD38C /* SignatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewModel.swift; sourceTree = "<group>"; };
+		41662612235CDDDD008DD38C /* VerificationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationBuilder.swift; sourceTree = "<group>"; };
+		41662613235CDDDE008DD38C /* VerificationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationRouter.swift; sourceTree = "<group>"; };
+		41662614235CDDDE008DD38C /* VerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		41662615235CDDDE008DD38C /* VerificationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationViewModel.swift; sourceTree = "<group>"; };
 		418E35B9235B6B5F00D6EB3E /* ETHSignerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETHSignerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418E35BC235B6B5F00D6EB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ETHSignerDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		418E35BE235B6B5F00D6EB3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +149,8 @@
 		418E3621235B6EC100D6EB3E /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		418E3622235B6EC100D6EB3E /* SplashRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		418E3625235B6EC100D6EB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41D548FE235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerExtension.swift; sourceTree = "<group>"; };
+		41D54900235CFFF00099D4A2 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		51B2B4330DE288230F4539D7 /* Pods-ETHCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHCore.debug.xcconfig"; path = "Target Support Files/Pods-ETHCore/Pods-ETHCore.debug.xcconfig"; sourceTree = "<group>"; };
 		7216AC22235C39DA00CBE5D3 /* ETHCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ETHCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216AC24235C39DA00CBE5D3 /* ETHCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETHCore.h; sourceTree = "<group>"; };
@@ -171,6 +203,58 @@
 				41573FBB235B9EA7005197BB /* AccountViewModel.swift */,
 			);
 			path = AccountScreen;
+			sourceTree = "<group>";
+		};
+		416625F9235CC0A8008DD38C /* SigningAndVerification */ = {
+			isa = PBXGroup;
+			children = (
+				41662611235CDDA2008DD38C /* Verification */,
+				416625FC235CC0E8008DD38C /* SignatureScreen */,
+				416625FA235CC0C0008DD38C /* SigningScreen */,
+				416625FB235CC0D1008DD38C /* Views */,
+			);
+			path = SigningAndVerification;
+			sourceTree = "<group>";
+		};
+		416625FA235CC0C0008DD38C /* SigningScreen */ = {
+			isa = PBXGroup;
+			children = (
+				416625FD235CC146008DD38C /* SigningRouter.swift */,
+				416625FE235CC146008DD38C /* SigningViewController.swift */,
+				416625FF235CC146008DD38C /* SigningBuilder.swift */,
+				41662600235CC146008DD38C /* SigningViewModel.swift */,
+			);
+			path = SigningScreen;
+			sourceTree = "<group>";
+		};
+		416625FB235CC0D1008DD38C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41662605235CC29C008DD38C /* Signing.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		416625FC235CC0E8008DD38C /* SignatureScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41662609235CD22F008DD38C /* SignatureRouter.swift */,
+				4166260A235CD22F008DD38C /* SignatureViewController.swift */,
+				4166260B235CD22F008DD38C /* SignatureBuilder.swift */,
+				4166260C235CD22F008DD38C /* SignatureViewModel.swift */,
+			);
+			path = SignatureScreen;
+			sourceTree = "<group>";
+		};
+		41662611235CDDA2008DD38C /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				41662612235CDDDD008DD38C /* VerificationBuilder.swift */,
+				41662613235CDDDE008DD38C /* VerificationRouter.swift */,
+				41662614235CDDDE008DD38C /* VerificationViewController.swift */,
+				41662615235CDDDE008DD38C /* VerificationViewModel.swift */,
+			);
+			path = Verification;
 			sourceTree = "<group>";
 		};
 		418E35B0235B6B5F00D6EB3E = {
@@ -235,6 +319,8 @@
 				418E35E3235B6EC000D6EB3E /* Storyboard Extension */,
 				418E35E7235B6EC100D6EB3E /* UINavigationControllerExtension.swift */,
 				418E35E8235B6EC100D6EB3E /* StringExtension.swift */,
+				41D54900235CFFF00099D4A2 /* UIButtonExtension.swift */,
+				41D548FE235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -282,6 +368,7 @@
 				418E35FB235B6EC100D6EB3E /* ActivityIndicator.swift */,
 				418E35FD235B6EC100D6EB3E /* LocalizableWords.swift */,
 				418E35FE235B6EC100D6EB3E /* Colors.swift */,
+				41662607235CCF49008DD38C /* QRCodeGenerator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -313,6 +400,7 @@
 		418E3606235B6EC100D6EB3E /* Sences */ = {
 			isa = PBXGroup;
 			children = (
+				416625F9235CC0A8008DD38C /* SigningAndVerification */,
 				418E3616235B6EC100D6EB3E /* Main */,
 				418E3607235B6EC100D6EB3E /* ParentClasses */,
 			);
@@ -524,6 +612,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41662606235CC29C008DD38C /* Signing.storyboard in Resources */,
 				418E35C9235B6B6100D6EB3E /* LaunchScreen.storyboard in Resources */,
 				418E3657235B6EC100D6EB3E /* Main.storyboard in Resources */,
 				418E35C6235B6B6100D6EB3E /* Assets.xcassets in Resources */,
@@ -656,34 +745,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				418E3629235B6EC100D6EB3E /* StoryboardIdentifiable.swift in Sources */,
+				41D54901235CFFF00099D4A2 /* UIButtonExtension.swift in Sources */,
 				418E3639235B6EC100D6EB3E /* main.swift in Sources */,
 				41573FBD235B9EA7005197BB /* AccountViewController.swift in Sources */,
 				418E3646235B6EC100D6EB3E /* Router.swift in Sources */,
 				418E3633235B6EC100D6EB3E /* ReachabilityManager.swift in Sources */,
+				41662608235CCF49008DD38C /* QRCodeGenerator.swift in Sources */,
+				41662603235CC146008DD38C /* SigningBuilder.swift in Sources */,
+				41D548FF235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift in Sources */,
 				41573FB6235B8110005197BB /* SetupViewModel.swift in Sources */,
 				418E363C235B6EC100D6EB3E /* ActivityIndicator.swift in Sources */,
 				418E3656235B6EC100D6EB3E /* SplashRouter.swift in Sources */,
+				4166260F235CD230008DD38C /* SignatureBuilder.swift in Sources */,
+				41662601235CC146008DD38C /* SigningRouter.swift in Sources */,
 				41573FB4235B8110005197BB /* SetupViewController.swift in Sources */,
 				418E3654235B6EC100D6EB3E /* SplashViewController.swift in Sources */,
+				41662604235CC146008DD38C /* SigningViewModel.swift in Sources */,
 				418E35BD235B6B5F00D6EB3E /* AppDelegate.swift in Sources */,
+				41662616235CDDDE008DD38C /* VerificationBuilder.swift in Sources */,
 				41573FC1235BA9A9005197BB /* BalanceRepository.swift in Sources */,
 				41573FB5235B8110005197BB /* SetupBuilder.swift in Sources */,
 				418E362C235B6EC100D6EB3E /* UINavigationControllerExtension.swift in Sources */,
 				418E363B235B6EC100D6EB3E /* ToastView.swift in Sources */,
 				418E3645235B6EC100D6EB3E /* ViewModel.swift in Sources */,
 				418E35BF235B6B5F00D6EB3E /* SceneDelegate.swift in Sources */,
+				4166260E235CD230008DD38C /* SignatureViewController.swift in Sources */,
 				418E362B235B6EC100D6EB3E /* UIViewController+StoryboardIdentifier.swift in Sources */,
 				418E363F235B6EC100D6EB3E /* Colors.swift in Sources */,
+				4166260D235CD230008DD38C /* SignatureRouter.swift in Sources */,
 				418E362D235B6EC100D6EB3E /* StringExtension.swift in Sources */,
+				41662618235CDDDE008DD38C /* VerificationViewController.swift in Sources */,
 				418E362A235B6EC100D6EB3E /* UIStoryboard+Storyboards.swift in Sources */,
 				41573FBE235B9EA7005197BB /* AccountBuilder.swift in Sources */,
 				41573FBC235B9EA7005197BB /* AccountRouter.swift in Sources */,
 				41573FBF235B9EA7005197BB /* AccountViewModel.swift in Sources */,
 				418E3644235B6EC100D6EB3E /* ViewController.swift in Sources */,
 				418E363A235B6EC100D6EB3E /* FontManager.swift in Sources */,
+				41662610235CD230008DD38C /* SignatureViewModel.swift in Sources */,
 				41573FB3235B8110005197BB /* SetupRouter.swift in Sources */,
 				418E3655235B6EC100D6EB3E /* SplashViewModel.swift in Sources */,
 				418E363E235B6EC100D6EB3E /* LocalizableWords.swift in Sources */,
+				41662619235CDDDE008DD38C /* VerificationViewModel.swift in Sources */,
+				41662602235CC146008DD38C /* SigningViewController.swift in Sources */,
+				41662617235CDDDE008DD38C /* VerificationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,7 +960,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B783D361B796F7B89C940035 /* Pods-ETHSignerDemo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXQFTMS2M;
@@ -876,7 +980,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF0525618E2F10B989EA8452 /* Pods-ETHSignerDemo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXQFTMS2M;
@@ -942,6 +1046,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51B2B4330DE288230F4539D7 /* Pods-ETHCore.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -972,6 +1077,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E45947DC81079953A2B2BCD0 /* Pods-ETHCore.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

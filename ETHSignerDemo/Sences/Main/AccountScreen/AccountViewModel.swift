@@ -12,7 +12,7 @@ import ETHCore
 class AccountViewModel: ViewModel {
 
     // input
-    private var keyStore: ETHKeyStore!
+    var keyStore: ETHKeyStore!
     private var repositry: BalanceRepository!
 
     // output

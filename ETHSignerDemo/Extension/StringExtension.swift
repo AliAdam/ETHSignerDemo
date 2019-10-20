@@ -23,14 +23,3 @@ extension String {
     }
 
 }
-
-import UIKit
-extension UIButton {
-
-    public override var isEnabled: Bool {
-        didSet {
-            alpha = isEnabled ? 1.0 : 0.5
-        }
-    }
-
-}

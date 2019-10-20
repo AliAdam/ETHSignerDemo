@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signing View Controller-->
+        <scene sceneID="m9I-UH-NTB">
+            <objects>
+                <viewController storyboardIdentifier="SigningViewController" id="ncV-Tn-RTc" customClass="SigningViewController" customModule="ETHSignerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZKp-N1-A9W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-rW-hQw">
+                                <rect key="frame" x="10" y="74" width="394" height="158.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter Your Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXN-FZ-vV7">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9K0-lj-s9Z">
+                                        <rect key="frame" x="0.0" y="50.5" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-VD-72F">
+                                        <rect key="frame" x="0.0" y="114.5" width="394" height="44"/>
+                                        <color key="backgroundColor" red="0.32789680360000001" green="0.77751368279999999" blue="0.70588201279999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="q1Z-9K-mnP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleShadowColor" red="0.32789680360000001" green="0.77751368279999999" blue="0.70588201279999996" alpha="0.50352460489999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zvd-dl-Pfp" firstAttribute="trailing" secondItem="Q82-rW-hQw" secondAttribute="trailing" constant="10" id="Vql-2j-EUj"/>
+                            <constraint firstItem="Q82-rW-hQw" firstAttribute="leading" secondItem="zvd-dl-Pfp" secondAttribute="leading" constant="10" id="a5C-ew-apC"/>
+                            <constraint firstItem="Q82-rW-hQw" firstAttribute="top" secondItem="zvd-dl-Pfp" secondAttribute="top" constant="30" id="wby-XQ-k8P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zvd-dl-Pfp"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneBTN" destination="pM1-VD-72F" id="fhd-h3-HCp"/>
+                        <outlet property="msgTXTF" destination="9K0-lj-s9Z" id="KJb-W9-UXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8u-Ql-IEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="793"/>
+        </scene>
+        <!--Signature View Controller-->
+        <scene sceneID="PhW-4s-03L">
+            <objects>
+                <viewController storyboardIdentifier="SignatureViewController" id="s9c-3b-PeM" customClass="SignatureViewController" customModule="ETHSignerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E4b-zE-4gs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xgv-7I-wXH">
+                                <rect key="frame" x="10" y="74" width="394" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nin-Zm-GwP">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-7c-JUk">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7R-j1-25C">
+                                                <rect key="frame" x="84" y="0.0" width="310" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Pk-uN-ZZQ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ols-eJ-410">
+                                <rect key="frame" x="10" y="251" width="394" height="394"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ols-eJ-410" secondAttribute="height" multiplier="1:1" id="Bwe-EZ-Fsl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ols-eJ-410" firstAttribute="leading" secondItem="F8g-bg-Fk6" secondAttribute="leading" constant="10" id="4ps-pE-928"/>
+                            <constraint firstItem="Xgv-7I-wXH" firstAttribute="top" secondItem="F8g-bg-Fk6" secondAttribute="top" constant="30" id="9kg-8o-R3q"/>
+                            <constraint firstItem="F8g-bg-Fk6" firstAttribute="trailing" secondItem="ols-eJ-410" secondAttribute="trailing" constant="10" id="Gzo-t7-jRB"/>
+                            <constraint firstItem="F8g-bg-Fk6" firstAttribute="trailing" secondItem="Xgv-7I-wXH" secondAttribute="trailing" constant="10" id="KjO-lB-TXB"/>
+                            <constraint firstItem="ols-eJ-410" firstAttribute="centerY" secondItem="E4b-zE-4gs" secondAttribute="centerY" id="ecq-qz-CtL"/>
+                            <constraint firstItem="Xgv-7I-wXH" firstAttribute="leading" secondItem="F8g-bg-Fk6" secondAttribute="leading" constant="10" id="hdQ-nO-nHv"/>
+                            <constraint firstItem="ols-eJ-410" firstAttribute="centerX" secondItem="E4b-zE-4gs" secondAttribute="centerX" id="u3T-Tj-8wX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F8g-bg-Fk6"/>
+                    </view>
+                    <connections>
+                        <outlet property="msgLBL" destination="Z7R-j1-25C" id="hlz-eZ-OGT"/>
+                        <outlet property="qrCodeIMGV" destination="ols-eJ-410" id="3dd-Ar-aOO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZG-rx-zkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="793"/>
+        </scene>
+        <!--Verification View Controller-->
+        <scene sceneID="zh4-5U-1Zk">
+            <objects>
+                <viewController storyboardIdentifier="VerificationViewController" id="FhO-X8-ftn" customClass="VerificationViewController" customModule="ETHSignerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qd-fG-BSV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IrX-WC-lOR">
+                                <rect key="frame" x="10" y="74" width="394" height="138.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter Message To verify:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae2-T7-59o">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyD-cY-usb">
+                                        <rect key="frame" x="0.0" y="40.5" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eid-LU-dd9">
+                                        <rect key="frame" x="0.0" y="94.5" width="394" height="44"/>
+                                        <color key="backgroundColor" red="0.32789680360000001" green="0.77751368279999999" blue="0.70588201279999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="VrN-ku-KDo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Verify">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleShadowColor" red="0.32789680360000001" green="0.77751368279999999" blue="0.70588201279999996" alpha="0.50352460489999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="14J-4R-dyf" firstAttribute="trailing" secondItem="IrX-WC-lOR" secondAttribute="trailing" constant="10" id="5ZJ-zi-BIp"/>
+                            <constraint firstItem="IrX-WC-lOR" firstAttribute="leading" secondItem="14J-4R-dyf" secondAttribute="leading" constant="10" id="KAN-3U-lV4"/>
+                            <constraint firstItem="IrX-WC-lOR" firstAttribute="top" secondItem="14J-4R-dyf" secondAttribute="top" constant="30" id="ecU-pg-10w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="14J-4R-dyf"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneBTN" destination="Eid-LU-dd9" id="FaL-X0-P8y"/>
+                        <outlet property="msgTXTF" destination="zyD-cY-usb" id="4Ls-LW-de8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfL-Zq-9Km" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3490" y="793"/>
+        </scene>
+    </scenes>
+</document>

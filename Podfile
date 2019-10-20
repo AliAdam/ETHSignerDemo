@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '13.0'
 
 target 'ETHSignerDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -12,6 +12,7 @@ target 'ETHSignerDemo' do
   pod 'RxCocoa', '5.0.0'
   pod 'ReachabilitySwift', '5.0.0'
   pod 'SwiftLint', '0.35.0'
+  pod 'QRCodeReader.swift', '~> 10.1.0'
 
   target 'ETHSignerDemoTests' do
     inherit! :search_paths
@@ -30,3 +31,6 @@ target 'ETHCore' do
   pod 'web3swift', '2.1.6'
 
 end
+
+
+

@@ -189,6 +189,8 @@
                     <connections>
                         <outlet property="addressLBL" destination="Zfs-zJ-77g" id="vJu-Cv-peu"/>
                         <outlet property="balanceLBL" destination="Kv4-sg-JH8" id="uYG-Wl-6rr"/>
+                        <outlet property="signingBTN" destination="1Li-HH-CUD" id="Vsd-KC-Gfo"/>
+                        <outlet property="verifyBTN" destination="eOf-jO-D7T" id="7QF-0C-FBV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KU3-L3-R20" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

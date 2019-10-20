@@ -16,6 +16,8 @@ class AccountViewController: ViewController {
     fileprivate let disposeBag = DisposeBag()
     @IBOutlet weak var addressLBL: UILabel!
     @IBOutlet weak var balanceLBL: UILabel!
+    @IBOutlet weak var signingBTN: UIButton!
+    @IBOutlet weak var verifyBTN: UIButton!
 
     func set(withViewModel viewModel: AccountViewModel, router: AccountRouter) {
         self.viewModel = viewModel
@@ -49,6 +51,17 @@ private extension AccountViewController {
         handleViewModelActivityIndicatorStatus()
         self.viewModel.address.bind(to: addressLBL.rx.text).disposed(by: disposeBag)
         self.viewModel.balance.bind(to: balanceLBL.rx.text).disposed(by: disposeBag)
+        //navigateToSigningScreen
+
+        signingBTN.rx.tap.subscribe(onNext: { _ in
+            let keyStore = self.viewModel.keyStore
+            self.router.navigateToSigningScreen(keyStore!)
+        }).disposed(by: disposeBag)
+
+        verifyBTN.rx.tap.subscribe(onNext: { _ in
+            let keyStore = self.viewModel.keyStore
+            self.router.navigateToVerificationScreen(keyStore!)
+        }).disposed(by: disposeBag)
 
     }
 

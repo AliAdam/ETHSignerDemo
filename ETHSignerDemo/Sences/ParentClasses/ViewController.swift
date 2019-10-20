@@ -24,7 +24,9 @@ class ViewController: UIViewController {
     }
 
     func hideKeyBoard() {
+        DispatchQueue.main.async {
         self.view.endEditing(true)
+        }
     }
 
     /// show or hide Activaty Indicator

@@ -7,10 +7,17 @@
 //
 
 import Foundation
-
+import ETHCore
 class AccountRouter: Router {
 
-    func navigateToSomewhere() {
+    func navigateToSigningScreen(_ keyStore:ETHKeyStore) {
+            let controller = SigningBuilder.viewController(keyStore)
+            viewController?.navigationController?.pushViewController(controller, animated: true)
+
+    }
+    func navigateToVerificationScreen(_ keyStore:ETHKeyStore) {
+            let controller = VerificationBuilder.viewController(keyStore)
+            viewController?.navigationController?.pushViewController(controller, animated: true)
 
     }
 }

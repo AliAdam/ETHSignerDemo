@@ -18,5 +18,8 @@ struct LocalizableWords {
     static var account = "Account"
     static var invaildPrivateKey = "Invaild Private Key"
     static var ether = "Ether"
+    static var signing = "Signing"
+    static var verification = "Verification"
+    static var qrCodeGenratorError = "Cann't create QR Code From Signed Message"
 
 }
