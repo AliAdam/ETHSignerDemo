@@ -1,0 +1,6 @@
+framework module Pods_ETHCore {
+  umbrella header "Pods-ETHCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
