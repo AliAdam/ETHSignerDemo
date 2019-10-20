@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Web3swift
+import ETHCore
 
 struct AccountBuilder {
 
-    static func viewController(_ keyStore: PlainKeystore) -> UIViewController {
+    static func viewController(_ keyStore: ETHKeyStore) -> UIViewController {
         let repositry = RemoteBalanceRepository()
         let viewModel = AccountViewModel(keyStore, repositry: repositry)
         let router = AccountRouter()

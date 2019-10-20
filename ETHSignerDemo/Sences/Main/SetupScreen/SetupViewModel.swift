@@ -8,14 +8,14 @@
 
 import RxSwift
 import RxRelay
-import Web3swift
+import ETHCore
 
 class SetupViewModel: ViewModel {
 
     // input
     let privatKey = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!
-    let keyStoreSbj = PublishSubject<PlainKeystore>()
+    let keyStoreSbj = PublishSubject<ETHKeyStore>()
 
     // output
 
@@ -29,14 +29,13 @@ class SetupViewModel: ViewModel {
 
     func createKeyStore() {
         self.activityIndicatorSubject.onNext(true)
-        guard let  keystore =  PlainKeystore.init(privateKey: privatKey.value) else {
+        guard let  keyStore =  ETHKeyStore.init(privateKey: privatKey.value) else {
             self.activityIndicatorSubject.onNext(false)
             self.errorSubject.onNext(LocalizableWords.invaildPrivateKey)
             return
         }
 
-        self.activityIndicatorSubject.onNext(false)
-        self.keyStoreSbj.onNext(keystore)
+        self.keyStoreSbj.onNext(keyStore)
 
     }
 }

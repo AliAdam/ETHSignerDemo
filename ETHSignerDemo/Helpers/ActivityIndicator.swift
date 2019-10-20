@@ -12,9 +12,11 @@ class ActivityIndicator {
     private let activityView = UIView()
 
     func animateActivity(title: String, navigationItem: UINavigationItem) {
+
         guard navigationItem.titleView == nil else { return }
 
         activityIndicator.style = .medium
+        activityIndicator.color = Colors.brandwhite
         activityLabel.text = title
         activityLabel.textColor  = Colors.brandwhite
         activityLabel.font = FontManager.APPRegular.fontWith(size: 18)
@@ -32,12 +34,12 @@ class ActivityIndicator {
         activityView.addSubview(activityIndicator)
         activityView.addSubview(activityLabel)
 
-        navigationItem.titleView = activityView
-        activityIndicator.startAnimating()
+            navigationItem.titleView = self.activityView
+            self.activityIndicator.startAnimating()
     }
 
     func stopAnimating(navigationItem: UINavigationItem) {
-        activityIndicator.stopAnimating()
-        navigationItem.titleView = nil
+            self.activityIndicator.stopAnimating()
+            navigationItem.titleView = nil
     }
 }

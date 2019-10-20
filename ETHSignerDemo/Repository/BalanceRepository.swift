@@ -7,24 +7,22 @@
 //
 
 import Foundation
-import Web3swift
+import ETHCore
 
 protocol BalanceRepository {
-    func getBalance(address: EthereumAddress) -> String
+    func getBalance(address: ETHAddress, complitionHandler: @escaping((Result<String,Error>) -> Void))
 }
 
 class RemoteBalanceRepository: BalanceRepository {
-    func getBalance(address: EthereumAddress) -> String {
-        let accountBalance = try! Web3.InfuraRinkebyWeb3().eth.getBalance(address: address)
-        if let formatedBalance = Web3.Utils.formatToEthereumUnits(accountBalance, toUnits: .eth, decimals: 3) {
-            return formatedBalance
+    func getBalance(address: ETHAddress, complitionHandler: @escaping((Result<String,Error>) -> Void)) {
+        DispatchQueue.global().async {
+            EthereumCore.getBalance(address: address, complitionHandler: complitionHandler)
         }
-        return ""
-    }
+       }
 }
 
 class MockupBalanceRepository: BalanceRepository {
-    func getBalance(address: EthereumAddress) -> String {
-        return "18.7"
+    func getBalance(address: ETHAddress, complitionHandler: @escaping((Result<String,Error>) -> Void)) {
+        complitionHandler(.success("18.7"))
     }
 }

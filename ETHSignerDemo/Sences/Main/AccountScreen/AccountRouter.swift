@@ -8,8 +8,7 @@
 
 import Foundation
 
-class AccountRouter {
-    weak var viewController: AccountViewController?
+class AccountRouter: Router {
 
     func navigateToSomewhere() {
 

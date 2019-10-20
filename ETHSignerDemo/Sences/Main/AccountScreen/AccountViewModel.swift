@@ -8,18 +8,18 @@
 
 import RxSwift
 import RxRelay
-import Web3swift
+import ETHCore
 class AccountViewModel: ViewModel {
 
     // input
-    private var keyStore: PlainKeystore!
+    private var keyStore: ETHKeyStore!
     private var repositry: BalanceRepository!
 
     // output
     let address = BehaviorRelay<String>(value: "")
     let balance = BehaviorRelay<String>(value: "")
 
-    init(_ keyStore: PlainKeystore, repositry: BalanceRepository) {
+    init(_ keyStore: ETHKeyStore, repositry: BalanceRepository) {
         super.init()
         self.keyStore = keyStore
         self.repositry = repositry
@@ -36,7 +36,16 @@ private extension AccountViewModel {
     func getBalance() {
         let ethAddress = keyStore.addresses!.first!
         address.accept(ethAddress.address)
-        let accountBalance = repositry.getBalance(address: ethAddress)
-        balance.accept("\(accountBalance) \(LocalizableWords.ether)")
+        self.activityIndicatorSubject.onNext(true)
+        repositry.getBalance(address: ethAddress) { response in
+            self.activityIndicatorSubject.onNext(false)
+            switch response {
+            case .success(let accountBalance):
+                self.balance.accept("\(accountBalance) \(LocalizableWords.ether)")
+            case .failure(let error):
+                self.handleError(error: error)
+            }
+
+        }
     }
 }

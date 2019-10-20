@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import  Web3swift
+import  ETHCore
 class SetupRouter: Router {
 
-    func navigateToAccountScreen(_ keyStore:PlainKeystore) {
+    func navigateToAccountScreen(_ keyStore:ETHKeyStore) {
         let controller = AccountBuilder.viewController(keyStore)
         viewController?.navigationController?.setViewControllers([controller], animated: true)
 

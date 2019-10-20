@@ -45,8 +45,27 @@ private extension AccountViewController {
     }
 
     func setupRx() {
+        handleViewModelErrors()
+        handleViewModelActivityIndicatorStatus()
         self.viewModel.address.bind(to: addressLBL.rx.text).disposed(by: disposeBag)
         self.viewModel.balance.bind(to: balanceLBL.rx.text).disposed(by: disposeBag)
 
     }
+
+    /// handel error msg from viewModel
+      func handleViewModelErrors() {
+          viewModel.errorSubject.subscribe({ [weak self] (event) in
+              if let msg =  event.element {
+                  self?.router.showErrorAlert(msg: msg)
+              }
+          }).disposed(by: disposeBag)
+      }
+
+      /// handle sActivaty Indicator Visabilty
+      func handleViewModelActivityIndicatorStatus() {
+          viewModel.activityIndicatorSubject.subscribe({ [weak self] (event) in
+              self?.setActivatyIndicatorVisabilty(visable: event.element ?? false)
+          }).disposed(by: disposeBag)
+      }
+
 }

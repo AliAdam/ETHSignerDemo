@@ -8,16 +8,25 @@ target 'ETHSignerDemo' do
   inhibit_all_warnings!
 
   # Pods for ETHSignerDemo
-  pod 'web3swift', '2.1.6'
   pod 'RxSwift', '5.0.0'
   pod 'RxCocoa', '5.0.0'
   pod 'ReachabilitySwift', '5.0.0'
   pod 'SwiftLint', '0.35.0'
 
-
   target 'ETHSignerDemoTests' do
     inherit! :search_paths
     # Pods for testing
   end
+
+end
+
+
+
+
+target 'ETHCore' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+  pod 'web3swift', '2.1.6'
 
 end

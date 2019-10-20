@@ -41,6 +41,11 @@
 		418E3655235B6EC100D6EB3E /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E3621235B6EC100D6EB3E /* SplashViewModel.swift */; };
 		418E3656235B6EC100D6EB3E /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E3622235B6EC100D6EB3E /* SplashRouter.swift */; };
 		418E3657235B6EC100D6EB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418E3624235B6EC100D6EB3E /* Main.storyboard */; };
+		67A4862E77287E2F738E6AC2 /* Pods_ETHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1392794E76A9348DEDF337 /* Pods_ETHCore.framework */; };
+		7216AC26235C39DA00CBE5D3 /* ETHCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7216AC24235C39DA00CBE5D3 /* ETHCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7216AC29235C39DA00CBE5D3 /* ETHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216AC22235C39DA00CBE5D3 /* ETHCore.framework */; };
+		7216AC2A235C39DA00CBE5D3 /* ETHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7216AC22235C39DA00CBE5D3 /* ETHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7216AC30235C404400CBE5D3 /* EthereumCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216AC2F235C404400CBE5D3 /* EthereumCore.swift */; };
 		AF00D0B7F9B34D2B8257A997 /* Pods_ETHSignerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93BDB9F5A0E26107F1EB9D0 /* Pods_ETHSignerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +57,28 @@
 			remoteGlobalIDString = 418E35B8235B6B5F00D6EB3E;
 			remoteInfo = ETHSignerDemo;
 		};
+		7216AC27235C39DA00CBE5D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418E35B1235B6B5F00D6EB3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7216AC21235C39DA00CBE5D3;
+			remoteInfo = ETHCore;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7216AC2B235C39DA00CBE5D3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7216AC2A235C39DA00CBE5D3 /* ETHCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0949FE89731E5ECFF90B801E /* Pods-ETHSignerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHSignerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-ETHSignerDemoTests/Pods-ETHSignerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,11 +119,18 @@
 		418E3621235B6EC100D6EB3E /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		418E3622235B6EC100D6EB3E /* SplashRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		418E3625235B6EC100D6EB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51B2B4330DE288230F4539D7 /* Pods-ETHCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHCore.debug.xcconfig"; path = "Target Support Files/Pods-ETHCore/Pods-ETHCore.debug.xcconfig"; sourceTree = "<group>"; };
+		7216AC22235C39DA00CBE5D3 /* ETHCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ETHCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7216AC24235C39DA00CBE5D3 /* ETHCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETHCore.h; sourceTree = "<group>"; };
+		7216AC25235C39DA00CBE5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7216AC2F235C404400CBE5D3 /* EthereumCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumCore.swift; sourceTree = "<group>"; };
 		A93BDB9F5A0E26107F1EB9D0 /* Pods_ETHSignerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETHSignerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0F89AE304A985C7383811 /* Pods-ETHSignerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHSignerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ETHSignerDemoTests/Pods-ETHSignerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B783D361B796F7B89C940035 /* Pods-ETHSignerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHSignerDemo.debug.xcconfig"; path = "Target Support Files/Pods-ETHSignerDemo/Pods-ETHSignerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BF0525618E2F10B989EA8452 /* Pods-ETHSignerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHSignerDemo.release.xcconfig"; path = "Target Support Files/Pods-ETHSignerDemo/Pods-ETHSignerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C3608CDA8F4B3F3C9FA438C6 /* Pods_ETHSignerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETHSignerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45947DC81079953A2B2BCD0 /* Pods-ETHCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHCore.release.xcconfig"; path = "Target Support Files/Pods-ETHCore/Pods-ETHCore.release.xcconfig"; sourceTree = "<group>"; };
+		EE1392794E76A9348DEDF337 /* Pods_ETHCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETHCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF00D0B7F9B34D2B8257A997 /* Pods_ETHSignerDemo.framework in Frameworks */,
+				7216AC29235C39DA00CBE5D3 /* ETHCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +148,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				090E9A637C7ADE67F033AA02 /* Pods_ETHSignerDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7216AC1F235C39DA00CBE5D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A4862E77287E2F738E6AC2 /* Pods_ETHCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				418E35BB235B6B5F00D6EB3E /* ETHSignerDemo */,
+				7216AC23235C39DA00CBE5D3 /* ETHCore */,
 				418E35D2235B6B6100D6EB3E /* ETHSignerDemoTests */,
 				418E35BA235B6B5F00D6EB3E /* Products */,
 				E5061F4951336666292E7129 /* Pods */,
@@ -147,6 +190,7 @@
 			children = (
 				418E35B9235B6B5F00D6EB3E /* ETHSignerDemo.app */,
 				418E35CF235B6B6100D6EB3E /* ETHSignerDemoTests.xctest */,
+				7216AC22235C39DA00CBE5D3 /* ETHCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,7 +198,7 @@
 		418E35BB235B6B5F00D6EB3E /* ETHSignerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				418E3606235B6EC100D6EB3E /* Moduls */,
+				418E3606235B6EC100D6EB3E /* Sences */,
 				418E35F5235B6EC100D6EB3E /* AppDelegate */,
 				418E35DF235B6EC000D6EB3E /* Extension */,
 				418E35F8235B6EC100D6EB3E /* Helpers */,
@@ -266,13 +310,13 @@
 			path = LiveFromAPI;
 			sourceTree = "<group>";
 		};
-		418E3606235B6EC100D6EB3E /* Moduls */ = {
+		418E3606235B6EC100D6EB3E /* Sences */ = {
 			isa = PBXGroup;
 			children = (
 				418E3616235B6EC100D6EB3E /* Main */,
 				418E3607235B6EC100D6EB3E /* ParentClasses */,
 			);
-			path = Moduls;
+			path = Sences;
 			sourceTree = "<group>";
 		};
 		418E3607235B6EC100D6EB3E /* ParentClasses */ = {
@@ -330,8 +374,19 @@
 			children = (
 				A93BDB9F5A0E26107F1EB9D0 /* Pods_ETHSignerDemo.framework */,
 				C3608CDA8F4B3F3C9FA438C6 /* Pods_ETHSignerDemoTests.framework */,
+				EE1392794E76A9348DEDF337 /* Pods_ETHCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7216AC23235C39DA00CBE5D3 /* ETHCore */ = {
+			isa = PBXGroup;
+			children = (
+				7216AC2F235C404400CBE5D3 /* EthereumCore.swift */,
+				7216AC24235C39DA00CBE5D3 /* ETHCore.h */,
+				7216AC25235C39DA00CBE5D3 /* Info.plist */,
+			);
+			path = ETHCore;
 			sourceTree = "<group>";
 		};
 		E5061F4951336666292E7129 /* Pods */ = {
@@ -341,11 +396,24 @@
 				BF0525618E2F10B989EA8452 /* Pods-ETHSignerDemo.release.xcconfig */,
 				0949FE89731E5ECFF90B801E /* Pods-ETHSignerDemoTests.debug.xcconfig */,
 				B0A0F89AE304A985C7383811 /* Pods-ETHSignerDemoTests.release.xcconfig */,
+				51B2B4330DE288230F4539D7 /* Pods-ETHCore.debug.xcconfig */,
+				E45947DC81079953A2B2BCD0 /* Pods-ETHCore.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7216AC1D235C39DA00CBE5D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7216AC26235C39DA00CBE5D3 /* ETHCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		418E35B8235B6B5F00D6EB3E /* ETHSignerDemo */ = {
@@ -358,10 +426,12 @@
 				418E35B7235B6B5F00D6EB3E /* Resources */,
 				F0A94B6697EF5E9C2C1DB497 /* [CP] Embed Pods Frameworks */,
 				418E3659235B73E900D6EB3E /* SwiftLint */,
+				7216AC2B235C39DA00CBE5D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7216AC28235C39DA00CBE5D3 /* PBXTargetDependency */,
 			);
 			name = ETHSignerDemo;
 			productName = ETHSignerDemo;
@@ -387,6 +457,25 @@
 			productReference = 418E35CF235B6B6100D6EB3E /* ETHSignerDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7216AC21235C39DA00CBE5D3 /* ETHCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7216AC2E235C39DA00CBE5D3 /* Build configuration list for PBXNativeTarget "ETHCore" */;
+			buildPhases = (
+				22AE09BE4C301654EBB104F0 /* [CP] Check Pods Manifest.lock */,
+				7216AC1D235C39DA00CBE5D3 /* Headers */,
+				7216AC1E235C39DA00CBE5D3 /* Sources */,
+				7216AC1F235C39DA00CBE5D3 /* Frameworks */,
+				7216AC20235C39DA00CBE5D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETHCore;
+			productName = ETHCore;
+			productReference = 7216AC22235C39DA00CBE5D3 /* ETHCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -403,6 +492,10 @@
 					418E35CE235B6B6100D6EB3E = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 418E35B8235B6B5F00D6EB3E;
+					};
+					7216AC21235C39DA00CBE5D3 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -421,6 +514,7 @@
 			targets = (
 				418E35B8235B6B5F00D6EB3E /* ETHSignerDemo */,
 				418E35CE235B6B6100D6EB3E /* ETHSignerDemoTests */,
+				7216AC21235C39DA00CBE5D3 /* ETHCore */,
 			);
 		};
 /* End PBXProject section */
@@ -443,9 +537,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7216AC20235C39DA00CBE5D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		22AE09BE4C301654EBB104F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ETHCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		418E3659235B73E900D6EB3E /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,6 +695,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7216AC1E235C39DA00CBE5D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7216AC30235C404400CBE5D3 /* EthereumCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -579,6 +710,11 @@
 			isa = PBXTargetDependency;
 			target = 418E35B8235B6B5F00D6EB3E /* ETHSignerDemo */;
 			targetProxy = 418E35D0235B6B6100D6EB3E /* PBXContainerItemProxy */;
+		};
+		7216AC28235C39DA00CBE5D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7216AC21235C39DA00CBE5D3 /* ETHCore */;
+			targetProxy = 7216AC27235C39DA00CBE5D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -720,6 +856,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B783D361B796F7B89C940035 /* Pods-ETHSignerDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXQFTMS2M;
@@ -739,6 +876,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF0525618E2F10B989EA8452 /* Pods-ETHSignerDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXQFTMS2M;
@@ -800,6 +938,65 @@
 			};
 			name = Release;
 		};
+		7216AC2C235C39DA00CBE5D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B2B4330DE288230F4539D7 /* Pods-ETHCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZMXQFTMS2M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ETHCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MyFatoorah.ETHCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7216AC2D235C39DA00CBE5D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E45947DC81079953A2B2BCD0 /* Pods-ETHCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZMXQFTMS2M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ETHCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MyFatoorah.ETHCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -826,6 +1023,15 @@
 			buildConfigurations = (
 				418E35DC235B6B6100D6EB3E /* Debug */,
 				418E35DD235B6B6100D6EB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7216AC2E235C39DA00CBE5D3 /* Build configuration list for PBXNativeTarget "ETHCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7216AC2C235C39DA00CBE5D3 /* Debug */,
+				7216AC2D235C39DA00CBE5D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

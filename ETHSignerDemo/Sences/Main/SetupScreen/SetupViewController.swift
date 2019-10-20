@@ -71,6 +71,7 @@ private extension SetupViewController {
 
         viewModel.keyStoreSbj.subscribe(onNext: { keystore in
             self.hideKeyBoard()
+            self.setActivatyIndicatorVisabilty(visable: false)
             self.router.navigateToAccountScreen(keystore)
         }).disposed(by: disposeBag)
     }

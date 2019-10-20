@@ -29,10 +29,12 @@ class ViewController: UIViewController {
 
     /// show or hide Activaty Indicator
     func setActivatyIndicatorVisabilty(visable:Bool) {
+        DispatchQueue.main.async {
         if visable {
             self.showActivaty()
         } else {
             self.hideActivity()
+        }
         }
     }
 
