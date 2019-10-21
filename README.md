@@ -43,7 +43,7 @@ class MockupBalanceRepository: BalanceRepository {}
 Modules divied the app into  Modules each Module represent a feature of the  app .
  I just divid the APP to two Modules 
  * ```ETHSignerDemo```   The main Module and have all the app screeens 
- *  ```ETHCore```  A staric framework Target  Manage the communcation with etherem APIs 
+ *  ```ETHCore```  A static framework Target  Manage the communcation with etherem APIs 
 
 
 
