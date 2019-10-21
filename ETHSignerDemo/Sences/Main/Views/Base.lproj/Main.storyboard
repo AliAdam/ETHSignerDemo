@@ -202,11 +202,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="duh-Yy-ho9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3du-kK-zrN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="3du-kK-zrN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.32789680360000001" green="0.77751368279999999" blue="0.70588201279999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.2156862745" green="0.74509803919999995" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

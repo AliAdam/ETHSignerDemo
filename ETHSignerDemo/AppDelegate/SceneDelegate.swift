@@ -54,8 +54,22 @@ extension SceneDelegate {
 
     /// Set NavigationBar title appearance
     private func setAppearance() {
-            UINavigationBar.appearance().barTintColor = Colors.brandColor
+        
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundColor = Colors.brandColor
+            appearance.titleTextAttributes = [.foregroundColor: Colors.brandwhite]
+            appearance.largeTitleTextAttributes = [.foregroundColor: Colors.brandwhite]
+
+            UINavigationBar.appearance().tintColor = .white
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().compactAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        } else {
             UINavigationBar.appearance().tintColor = Colors.brandwhite
+            UINavigationBar.appearance().barTintColor = Colors.brandColor
+            UINavigationBar.appearance().isTranslucent = false
+        }
 
     }
 
