@@ -293,7 +293,6 @@
 				418E35F5235B6EC100D6EB3E /* AppDelegate */,
 				418E35DF235B6EC000D6EB3E /* Extension */,
 				418E35F8235B6EC100D6EB3E /* Helpers */,
-				418E35EA235B6EC100D6EB3E /* Models */,
 				418E35EF235B6EC100D6EB3E /* Network */,
 				418E35DE235B6E8300D6EB3E /* Resources */,
 			);
@@ -339,13 +338,6 @@
 				418E35E6235B6EC000D6EB3E /* UIViewController+StoryboardIdentifier.swift */,
 			);
 			path = "Storyboard Extension";
-			sourceTree = "<group>";
-		};
-		418E35EA235B6EC100D6EB3E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		418E35EF235B6EC100D6EB3E /* Network */ = {
