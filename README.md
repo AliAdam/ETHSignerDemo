@@ -48,11 +48,11 @@ Modules divied the app into  Modules each Module represent a feature of the  app
 
 
 ###  Sences (Screens)
-Sences divied the app into  Sences each Sence has  screens inside it  
-each module  have it is own  storyboard 
+Sences divied each Module in the  app into  Sences each Sence has  screens inside it  
+each Sence  have it is own  storyboard 
 inside Sence each screen have folder contain MVVM classes 
 
-* ```We have only two Modules on the app``` 
+* ```We have only two Sences on the ETHSignerDemo module ``` 
 * ```Main```   Splash screen ,   Setup Screen  and Account Screen
 *  ```SigningAndVerification```  Signing Screen , Signature Screen and Verification Screeen 
 
