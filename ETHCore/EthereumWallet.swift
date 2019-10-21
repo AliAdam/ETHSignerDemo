@@ -25,7 +25,7 @@ public class EthereumWallet {
 
 private extension EthereumWallet {
     func createKeyStore(_ privateKey: String) -> PlainKeystore? {
-        guard let  keyStore =  ETHKeyStore.init(privateKey: privateKey) else { return nil }
+        guard let  keyStore =  PlainKeystore.init(privateKey: privateKey) else { return nil }
         return keyStore
     }
     func createKeystoreManager() {

@@ -10,10 +10,6 @@ import Foundation
 import Web3swift
 import secp256k1_swift
 
-public typealias ETHAddress = EthereumAddress
-public typealias ETHKeyStore = PlainKeystore
-
-
 public class EthereumCore {
 
     public static func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
