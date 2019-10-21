@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import  Web3swift
+import Web3swift
 import secp256k1_swift
 
 public typealias ETHAddress = EthereumAddress
