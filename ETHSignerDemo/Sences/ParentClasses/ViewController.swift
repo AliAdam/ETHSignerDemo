@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         ActivityIndicator.shared.stopAnimating(navigationItem: self.navigationItem)
 
     }
-    
+
 }
 
 extension ViewController {

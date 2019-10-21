@@ -18,15 +18,15 @@ class AccountViewController: ViewController {
     @IBOutlet weak var balanceLBL: UILabel!
     @IBOutlet weak var signingBTN: UIButton!
     @IBOutlet weak var verifyBTN: UIButton!
-    
+
     func set(withViewModel viewModel: AccountViewModel, router: AccountRouter) {
         self.viewModel = viewModel
         self.router = router
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupViews()
         setupLayout()
         setupRx()
@@ -35,17 +35,17 @@ class AccountViewController: ViewController {
 
 // MARK: Setup
 private extension AccountViewController {
-    
+
     func setupViews() {
         showNavBar()
         self.title = LocalizableWords.account
-        
+
     }
-    
+
     func setupLayout() {
-        
+
     }
-    
+
     func setupRx() {
         handleViewModelErrors()
         handleViewModelActivityIndicatorStatus()
@@ -54,34 +54,34 @@ private extension AccountViewController {
         self.viewModel.address.bind(to: addressLBL.rx.text).disposed(by: disposeBag)
         self.viewModel.balance.bind(to: balanceLBL.rx.text).disposed(by: disposeBag)
     }
-    
+
     func handleVerifyBTNAction() {
         verifyBTN.rx.tap.subscribe(onNext: { [weak self] _ in
             let wallet = self?.viewModel.wallet
             self?.router.navigateToVerificationScreen(wallet!)
         }).disposed(by: disposeBag)
-        
+
     }
     func handleSigningBTNAction() {
         signingBTN.rx.tap.subscribe(onNext: { [weak self] _ in
             let wallet = self?.viewModel.wallet
             self?.router.navigateToSigningScreen(wallet!)
         }).disposed(by: disposeBag)
-        
+
     }
-    
+
     /// handel error msg from viewModel
     func handleViewModelErrors() {
         viewModel.errorSubject.subscribe(onNext: { [weak self] msg in
             self?.router.showErrorAlert(msg: msg)
         }).disposed(by: disposeBag)
     }
-    
+
     /// handle sActivaty Indicator Visabilty
     func handleViewModelActivityIndicatorStatus() {
         viewModel.activityIndicatorSubject.subscribe({ [weak self] (event) in
             self?.setActivatyIndicatorVisabilty(visable: event.element ?? false)
         }).disposed(by: disposeBag)
     }
-    
+
 }

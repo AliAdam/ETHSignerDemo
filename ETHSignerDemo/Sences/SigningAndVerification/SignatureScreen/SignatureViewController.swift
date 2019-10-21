@@ -16,15 +16,15 @@ class SignatureViewController: ViewController {
     fileprivate let disposeBag = DisposeBag()
     @IBOutlet weak var msgLBL: UILabel!
     @IBOutlet weak var qrCodeIMGV: UIImageView!
-    
+
     func set(withViewModel viewModel: SignatureViewModel, router: SignatureRouter) {
         self.viewModel = viewModel
         self.router = router
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupViews()
         setupLayout()
         setupRx()
@@ -33,24 +33,24 @@ class SignatureViewController: ViewController {
 
 // MARK: Setup
 private extension SignatureViewController {
-    
+
     func setupViews() {
         self.title = LocalizableWords.signature
     }
-    
+
     func setupLayout() {
-        
+
     }
-    
+
     func setupRx() {
-        
+
         viewModel.qrCodeSbj.subscribe(onNext: { [weak self] qrCode in
             self?.qrCodeIMGV.image = qrCode
         }).disposed(by: disposeBag)
-        
+
         viewModel.msgSbj.subscribe(onNext: { [weak self] msg in
             self?.msgLBL.text = msg
         }).disposed(by: disposeBag)
-        
+
     }
 }
