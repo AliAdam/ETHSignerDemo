@@ -22,7 +22,7 @@ class SetupViewModel: ViewModel {
 
     }
 
-    func createKeyStore() {
+    func createWallet() {
         self.activityIndicatorSubject.onNext(true)
         guard let wallet = EthereumWallet(privateKey: privateKey.value) else {
             self.activityIndicatorSubject.onNext(false)

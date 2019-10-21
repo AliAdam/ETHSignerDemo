@@ -20,7 +20,7 @@ class RemoteVerificationRepository: VerificationRepository {
        }
 }
 
-class MockupVerificationRepository: VerificationRepository {
+class MockupVerificationRepository: VerificationRepository, MockUpWalletAndAddress {
     func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
         completionHandler(.success(true))
     }

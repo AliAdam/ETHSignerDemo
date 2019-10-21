@@ -20,7 +20,7 @@ class RemoteSigningRepository: SigningRepository {
        }
 }
 
-class MockupSigningRepository: SigningRepository {
+class MockupSigningRepository: SigningRepository, MockUpWalletAndAddress {
     func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void)) {
         completionHandler(.success(Data()))
     }

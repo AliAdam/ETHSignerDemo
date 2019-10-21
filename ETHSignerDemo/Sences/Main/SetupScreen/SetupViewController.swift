@@ -51,7 +51,7 @@ private extension SetupViewController {
     func handleDoneBTNAction() {
         doneBTN.rx.tap.subscribe(onNext: { [weak self] _ in
             self?.hideKeyBoard()
-            self?.viewModel.createKeyStore()
+            self?.viewModel.createWallet()
         }).disposed(by: disposeBag)
     }
 
