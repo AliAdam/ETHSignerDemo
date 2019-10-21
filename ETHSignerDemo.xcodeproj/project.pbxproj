@@ -62,6 +62,7 @@
 		7216AC29235C39DA00CBE5D3 /* ETHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216AC22235C39DA00CBE5D3 /* ETHCore.framework */; };
 		7216AC2A235C39DA00CBE5D3 /* ETHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7216AC22235C39DA00CBE5D3 /* ETHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7216AC30235C404400CBE5D3 /* EthereumCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216AC2F235C404400CBE5D3 /* EthereumCore.swift */; };
+		7216AC32235DCD4500CBE5D3 /* EthereumWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216AC31235DCD4500CBE5D3 /* EthereumWallet.swift */; };
 		AF00D0B7F9B34D2B8257A997 /* Pods_ETHSignerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93BDB9F5A0E26107F1EB9D0 /* Pods_ETHSignerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +157,7 @@
 		7216AC24235C39DA00CBE5D3 /* ETHCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETHCore.h; sourceTree = "<group>"; };
 		7216AC25235C39DA00CBE5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7216AC2F235C404400CBE5D3 /* EthereumCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumCore.swift; sourceTree = "<group>"; };
+		7216AC31235DCD4500CBE5D3 /* EthereumWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumWallet.swift; sourceTree = "<group>"; };
 		A93BDB9F5A0E26107F1EB9D0 /* Pods_ETHSignerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETHSignerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0F89AE304A985C7383811 /* Pods-ETHSignerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHSignerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ETHSignerDemoTests/Pods-ETHSignerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B783D361B796F7B89C940035 /* Pods-ETHSignerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHSignerDemo.debug.xcconfig"; path = "Target Support Files/Pods-ETHSignerDemo/Pods-ETHSignerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -470,6 +472,7 @@
 		7216AC23235C39DA00CBE5D3 /* ETHCore */ = {
 			isa = PBXGroup;
 			children = (
+				7216AC31235DCD4500CBE5D3 /* EthereumWallet.swift */,
 				7216AC2F235C404400CBE5D3 /* EthereumCore.swift */,
 				7216AC24235C39DA00CBE5D3 /* ETHCore.h */,
 				7216AC25235C39DA00CBE5D3 /* Info.plist */,
@@ -674,7 +677,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n#\"${PODS_ROOT}/SwiftLint/swiftlint autocorrect\"\n";
 		};
 		708F24EC35ECC9FD4E33A93A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -804,6 +807,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7216AC30235C404400CBE5D3 /* EthereumCore.swift in Sources */,
+				7216AC32235DCD4500CBE5D3 /* EthereumWallet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

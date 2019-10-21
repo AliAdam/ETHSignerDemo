@@ -10,13 +10,13 @@ import Foundation
 import ETHCore
 class AccountRouter: Router {
 
-    func navigateToSigningScreen(_ keyStore:ETHKeyStore) {
-            let controller = SigningBuilder.viewController(keyStore)
+    func navigateToSigningScreen(_ wallet:EthereumWallet) {
+            let controller = SigningBuilder.viewController(wallet)
             viewController?.navigationController?.pushViewController(controller, animated: true)
 
     }
-    func navigateToVerificationScreen(_ keyStore:ETHKeyStore) {
-            let controller = VerificationBuilder.viewController(keyStore)
+    func navigateToVerificationScreen(_ wallet:EthereumWallet) {
+            let controller = VerificationBuilder.viewController(wallet)
             viewController?.navigationController?.pushViewController(controller, animated: true)
 
     }

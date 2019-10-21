@@ -11,9 +11,9 @@ import ETHCore
 
 struct AccountBuilder {
 
-    static func viewController(_ keyStore: ETHKeyStore) -> UIViewController {
+    static func viewController(_ wallet: EthereumWallet) -> UIViewController {
         let repositry = RemoteBalanceRepository()
-        let viewModel = AccountViewModel(keyStore, repositry: repositry)
+        let viewModel = AccountViewModel(wallet, repositry: repositry)
         let router = AccountRouter()
              let viewController : AccountViewController =  UIStoryboard.storyboard(.main).instantiateViewController()
         router.viewController = viewController

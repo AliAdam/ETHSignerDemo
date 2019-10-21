@@ -54,13 +54,13 @@ private extension AccountViewController {
         //navigateToSigningScreen
 
         signingBTN.rx.tap.subscribe(onNext: { _ in
-            let keyStore = self.viewModel.keyStore
-            self.router.navigateToSigningScreen(keyStore!)
+            let wallet = self.viewModel.wallet
+            self.router.navigateToSigningScreen(wallet!)
         }).disposed(by: disposeBag)
 
         verifyBTN.rx.tap.subscribe(onNext: { _ in
-            let keyStore = self.viewModel.keyStore
-            self.router.navigateToVerificationScreen(keyStore!)
+            let wallet = self.viewModel.wallet
+            self.router.navigateToVerificationScreen(wallet!)
         }).disposed(by: disposeBag)
 
     }

@@ -10,8 +10,8 @@ import Foundation
 import  ETHCore
 class SetupRouter: Router {
 
-    func navigateToAccountScreen(_ keyStore:ETHKeyStore) {
-        let controller = AccountBuilder.viewController(keyStore)
+    func navigateToAccountScreen(_ wallet:EthereumWallet) {
+        let controller = AccountBuilder.viewController(wallet)
         viewController?.navigationController?.setViewControllers([controller], animated: true)
 
     }

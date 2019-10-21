@@ -10,9 +10,9 @@ import UIKit
 import ETHCore
 struct SigningBuilder {
 
-    static func viewController(_ keyStore: ETHKeyStore) -> UIViewController {
+    static func viewController(_ wallet: EthereumWallet) -> UIViewController {
         let repositry = RemoteSigningRepository()
-        let viewModel = SigningViewModel(keyStore, repositry: repositry)
+        let viewModel = SigningViewModel(wallet, repositry: repositry)
         let router = SigningRouter()
         let viewController : SigningViewController =  UIStoryboard.storyboard(.signing).instantiateViewController()
         router.viewController = viewController

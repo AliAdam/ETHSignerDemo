@@ -16,16 +16,16 @@ class VerificationViewModel: ViewModel {
     let msg = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!
     let isValidSignature = PublishSubject<Bool>()
-    private var keyStore: ETHKeyStore!
+    private var wallet: EthereumWallet!
     private var repositry: VerificationRepository!
 
     // output
 
     // internal
 
-    init(_ keyStore: ETHKeyStore, repositry: VerificationRepository) {
+    init(_ wallet: EthereumWallet, repositry: VerificationRepository) {
         super.init()
-        self.keyStore = keyStore
+        self.wallet = wallet
         self.repositry = repositry
         setupRx()
     }
@@ -45,7 +45,7 @@ private extension VerificationViewModel {
 
     func verify(_ qrCodeValue: String) {
         self.activityIndicatorSubject.onNext(true)
-        repositry.verifyMessage(message: msg.value, qrResultString: qrCodeValue, keystore: keyStore) { response in
+        repositry.verifyMessage(message: msg.value, qrResultString: qrCodeValue, wallet: wallet) { response in
             self.activityIndicatorSubject.onNext(false)
             switch response {
             case .success(let result):

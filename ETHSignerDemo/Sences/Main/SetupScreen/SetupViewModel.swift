@@ -13,9 +13,9 @@ import ETHCore
 class SetupViewModel: ViewModel {
 
     // input
-    let privatKey = BehaviorRelay<String>(value: "")
+    let privateKey = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!
-    let keyStoreSbj = PublishSubject<ETHKeyStore>()
+    let ethereumWalletSbj = PublishSubject<EthereumWallet>()
 
     // output
 
@@ -29,13 +29,13 @@ class SetupViewModel: ViewModel {
 
     func createKeyStore() {
         self.activityIndicatorSubject.onNext(true)
-        guard let  keyStore =  ETHKeyStore.init(privateKey: privatKey.value) else {
+        guard let wallet = EthereumWallet(privateKey: privateKey.value) else {
             self.activityIndicatorSubject.onNext(false)
             self.errorSubject.onNext(LocalizableWords.invaildPrivateKey)
             return
         }
 
-        self.keyStoreSbj.onNext(keyStore)
+        self.ethereumWalletSbj.onNext(wallet)
 
     }
 }
@@ -44,7 +44,7 @@ class SetupViewModel: ViewModel {
 private extension SetupViewModel {
 
     func setupRx() {
-        isValid = self.privatKey.asObservable().map({$0.isValidPrivateKey()})
+        isValid = self.privateKey.asObservable().map({$0.isValidPrivateKey()})
     }
 
 }

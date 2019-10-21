@@ -16,16 +16,16 @@ class SigningViewModel: ViewModel {
     let msg = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!
     let qrCodeSbj = PublishSubject<UIImage>()
-    private var keyStore: ETHKeyStore!
+    private var wallet: EthereumWallet!
     private var repositry: SigningRepository!
 
     // output
 
     // internal
 
-    init(_ keyStore: ETHKeyStore, repositry: SigningRepository) {
+    init(_ wallet: EthereumWallet, repositry: SigningRepository) {
         super.init()
-        self.keyStore = keyStore
+        self.wallet = wallet
         self.repositry = repositry
         setupRx()
     }
@@ -45,7 +45,7 @@ private extension SigningViewModel {
 
     func signing() {
         self.activityIndicatorSubject.onNext(true)
-        repositry.signPersonalMessage(message: msg.value, keystore: keyStore) { response in
+        repositry.signPersonalMessage(message: msg.value, wallet: wallet) { response in
             self.activityIndicatorSubject.onNext(false)
             switch response {
             case .success(let data):

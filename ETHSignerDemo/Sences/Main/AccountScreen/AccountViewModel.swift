@@ -12,16 +12,16 @@ import ETHCore
 class AccountViewModel: ViewModel {
 
     // input
-    var keyStore: ETHKeyStore!
+    var wallet: EthereumWallet!
     private var repositry: BalanceRepository!
 
     // output
     let address = BehaviorRelay<String>(value: "")
     let balance = BehaviorRelay<String>(value: "")
 
-    init(_ keyStore: ETHKeyStore, repositry: BalanceRepository) {
+    init(_ wallet: EthereumWallet, repositry: BalanceRepository) {
         super.init()
-        self.keyStore = keyStore
+        self.wallet = wallet
         self.repositry = repositry
         setupRx()
     }
@@ -34,10 +34,10 @@ private extension AccountViewModel {
         getBalance()
     }
     func getBalance() {
-        let ethAddress = keyStore.addresses!.first!
+        let ethAddress = wallet.getAddress()
         address.accept(ethAddress.address)
         self.activityIndicatorSubject.onNext(true)
-        repositry.getBalance(address: ethAddress) { response in
+        repositry.getBalance(wallet: wallet) { response in
             self.activityIndicatorSubject.onNext(false)
             switch response {
             case .success(let accountBalance):

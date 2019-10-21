@@ -42,7 +42,7 @@ private extension SetupViewController {
         handleViewModelErrors()
         handleViewModelActivityIndicatorStatus()
         handleViewModelKeyStoreSbj()
-        privatKeyTXTF.rx.text.orEmpty.bind(to: viewModel.privatKey).disposed(by: disposeBag)
+        privatKeyTXTF.rx.text.orEmpty.bind(to: viewModel.privateKey).disposed(by: disposeBag)
         viewModel.isValid.bind(to: doneBTN.rx.isEnabled).disposed(by: disposeBag)
         doneBTN.rx.tap.subscribe(onNext: { _ in
             self.hideKeyBoard()
@@ -69,10 +69,10 @@ private extension SetupViewController {
     /// handle sActivaty Indicator Visabilty
     func handleViewModelKeyStoreSbj() {
 
-        viewModel.keyStoreSbj.subscribe(onNext: { keystore in
+        viewModel.ethereumWalletSbj.subscribe(onNext: { wallet in
             self.hideKeyBoard()
             self.setActivatyIndicatorVisabilty(visable: false)
-            self.router.navigateToAccountScreen(keystore)
+            self.router.navigateToAccountScreen(wallet)
         }).disposed(by: disposeBag)
     }
 }
