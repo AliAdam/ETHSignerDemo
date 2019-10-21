@@ -57,6 +57,8 @@
 		418E3657235B6EC100D6EB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418E3624235B6EC100D6EB3E /* Main.storyboard */; };
 		41D548FF235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D548FE235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift */; };
 		41D54901235CFFF00099D4A2 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D54900235CFFF00099D4A2 /* UIButtonExtension.swift */; };
+		41D54903235E272D0099D4A2 /* SigningRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D54902235E272D0099D4A2 /* SigningRepository.swift */; };
+		41D54905235E27600099D4A2 /* VerificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D54904235E27600099D4A2 /* VerificationRepository.swift */; };
 		67A4862E77287E2F738E6AC2 /* Pods_ETHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1392794E76A9348DEDF337 /* Pods_ETHCore.framework */; };
 		7216AC26235C39DA00CBE5D3 /* ETHCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7216AC24235C39DA00CBE5D3 /* ETHCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7216AC29235C39DA00CBE5D3 /* ETHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216AC22235C39DA00CBE5D3 /* ETHCore.framework */; };
@@ -152,6 +154,8 @@
 		418E3625235B6EC100D6EB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41D548FE235CFFBA0099D4A2 /* QRCodeReaderViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerExtension.swift; sourceTree = "<group>"; };
 		41D54900235CFFF00099D4A2 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		41D54902235E272D0099D4A2 /* SigningRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningRepository.swift; sourceTree = "<group>"; };
+		41D54904235E27600099D4A2 /* VerificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationRepository.swift; sourceTree = "<group>"; };
 		51B2B4330DE288230F4539D7 /* Pods-ETHCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETHCore.debug.xcconfig"; path = "Target Support Files/Pods-ETHCore/Pods-ETHCore.debug.xcconfig"; sourceTree = "<group>"; };
 		7216AC22235C39DA00CBE5D3 /* ETHCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ETHCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216AC24235C39DA00CBE5D3 /* ETHCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETHCore.h; sourceTree = "<group>"; };
@@ -285,12 +289,12 @@
 			isa = PBXGroup;
 			children = (
 				418E3606235B6EC100D6EB3E /* Sences */,
+				418E35FF235B6EC100D6EB3E /* Repository */,
 				418E35F5235B6EC100D6EB3E /* AppDelegate */,
 				418E35DF235B6EC000D6EB3E /* Extension */,
 				418E35F8235B6EC100D6EB3E /* Helpers */,
 				418E35EA235B6EC100D6EB3E /* Models */,
 				418E35EF235B6EC100D6EB3E /* Network */,
-				418E35FF235B6EC100D6EB3E /* Repository */,
 				418E35DE235B6E8300D6EB3E /* Resources */,
 			);
 			path = ETHSignerDemo;
@@ -378,25 +382,11 @@
 		418E35FF235B6EC100D6EB3E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				418E3600235B6EC100D6EB3E /* Mockups */,
-				418E3604235B6EC100D6EB3E /* LiveFromAPI */,
 				41573FC0235BA9A9005197BB /* BalanceRepository.swift */,
+				41D54902235E272D0099D4A2 /* SigningRepository.swift */,
+				41D54904235E27600099D4A2 /* VerificationRepository.swift */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		418E3600235B6EC100D6EB3E /* Mockups */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mockups;
-			sourceTree = "<group>";
-		};
-		418E3604235B6EC100D6EB3E /* LiveFromAPI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LiveFromAPI;
 			sourceTree = "<group>";
 		};
 		418E3606235B6EC100D6EB3E /* Sences */ = {
@@ -773,6 +763,7 @@
 				418E3645235B6EC100D6EB3E /* ViewModel.swift in Sources */,
 				418E35BF235B6B5F00D6EB3E /* SceneDelegate.swift in Sources */,
 				4166260E235CD230008DD38C /* SignatureViewController.swift in Sources */,
+				41D54905235E27600099D4A2 /* VerificationRepository.swift in Sources */,
 				418E362B235B6EC100D6EB3E /* UIViewController+StoryboardIdentifier.swift in Sources */,
 				418E363F235B6EC100D6EB3E /* Colors.swift in Sources */,
 				4166260D235CD230008DD38C /* SignatureRouter.swift in Sources */,
@@ -782,6 +773,7 @@
 				41573FBE235B9EA7005197BB /* AccountBuilder.swift in Sources */,
 				41573FBC235B9EA7005197BB /* AccountRouter.swift in Sources */,
 				41573FBF235B9EA7005197BB /* AccountViewModel.swift in Sources */,
+				41D54903235E272D0099D4A2 /* SigningRepository.swift in Sources */,
 				418E3644235B6EC100D6EB3E /* ViewController.swift in Sources */,
 				418E363A235B6EC100D6EB3E /* FontManager.swift in Sources */,
 				41662610235CD230008DD38C /* SignatureViewModel.swift in Sources */,

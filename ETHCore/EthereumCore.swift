@@ -12,7 +12,11 @@ import secp256k1_swift
 
 public class EthereumCore {
 
-    public static func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
+    public static let `default` = EthereumCore()
+
+    private init() {}
+
+    public func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
         do {
             let address = wallet.address!
             let accountBalance = try wallet.web3Provider.eth.getBalance(address: address)
@@ -23,7 +27,7 @@ public class EthereumCore {
             completionHandler(.failure(error))
         }
     }
-    public static func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void)) {
+    public func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void)) {
         do {
             let address = wallet.address!
             let msgData = message.data(using: .utf8)
@@ -34,10 +38,10 @@ public class EthereumCore {
         }
     }
     //verify personal message
-    public static func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
+    public func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
         if let signature = Data(base64Encoded: qrResultString),
             let unmarshalledSignature = SECP256K1.unmarshalSignature(signatureData: signature), let msgData = message.data(using: .utf8) {
-                        print("V = " + String(unmarshalledSignature.v))
+            print("V = " + String(unmarshalledSignature.v))
             //            print("R = " + Data(unmarshalledSignature.r).toHexString())
             //            print("S = " + Data(unmarshalledSignature.s).toHexString())
             //            print("Personal hash = " + Web3.Utils.hashPersonalMessage(message.data(using: .utf8)!)!.toHexString())

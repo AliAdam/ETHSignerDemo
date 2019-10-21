@@ -8,10 +8,12 @@
 
 import Web3swift
 public class EthereumWallet {
+
     let web3Provider = Web3.InfuraRinkebyWeb3()
     var keyStore: PlainKeystore!
     var keyStoreManager: KeystoreManager!
     var address: EthereumAddress!
+
     public init?(privateKey: String) {
         guard let keyStore = self.createKeyStore(privateKey) else {return nil}
         self.keyStore = keyStore

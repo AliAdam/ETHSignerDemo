@@ -54,7 +54,7 @@ extension SceneDelegate {
 
     /// Set NavigationBar title appearance
     private func setAppearance() {
-        
+
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
             appearance.backgroundColor = Colors.brandColor

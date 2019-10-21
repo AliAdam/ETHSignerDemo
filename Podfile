@@ -12,7 +12,7 @@ target 'ETHSignerDemo' do
   pod 'RxCocoa', '5.0.0'
   pod 'ReachabilitySwift', '5.0.0'
   pod 'SwiftLint', '0.35.0'
-  pod 'QRCodeReader.swift', '~> 10.1.0'
+  pod 'QRCodeReader.swift', '10.1.0'
 
   target 'ETHSignerDemoTests' do
     inherit! :search_paths

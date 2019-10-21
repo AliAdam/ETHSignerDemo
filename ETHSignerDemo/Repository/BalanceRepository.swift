@@ -6,7 +6,6 @@
 //  Copyright © 2019 AliAdam. All rights reserved.
 //
 
-import Foundation
 import ETHCore
 
 protocol BalanceRepository {
@@ -16,7 +15,7 @@ protocol BalanceRepository {
 class RemoteBalanceRepository: BalanceRepository {
     func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
         DispatchQueue.global(qos: .userInitiated).async {
-            EthereumCore.getBalance(wallet: wallet, completionHandler: completionHandler)
+            EthereumCore.default.getBalance(wallet: wallet, completionHandler: completionHandler)
         }
        }
 }
@@ -24,41 +23,5 @@ class RemoteBalanceRepository: BalanceRepository {
 class MockupBalanceRepository: BalanceRepository {
     func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
         completionHandler(.success("18.7"))
-    }
-}
-
-protocol SigningRepository {
-    func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void))
-}
-
-class RemoteSigningRepository: SigningRepository {
-    func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void)) {
-        DispatchQueue.global(qos: .userInitiated).async {
-            EthereumCore.signPersonalMessage(message: message, wallet: wallet, completionHandler: completionHandler)
-        }
-       }
-}
-
-class MockupSigningRepository: SigningRepository {
-    func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void)) {
-        completionHandler(.success(Data()))
-    }
-}
-
-protocol VerificationRepository {
-    func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void))
-}
-
-class RemoteVerificationRepository: VerificationRepository {
-    func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
-        DispatchQueue.global(qos: .userInitiated).async {
-            EthereumCore.verifyMessage(message: message, qrResultString: qrResultString, wallet: wallet,  completionHandler: completionHandler)
-        }
-       }
-}
-
-class MockupVerificationRepository: VerificationRepository {
-    func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
-        completionHandler(.success(true))
     }
 }
