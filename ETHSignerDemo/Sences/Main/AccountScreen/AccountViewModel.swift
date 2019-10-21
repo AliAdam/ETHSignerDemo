@@ -11,11 +11,9 @@ import RxRelay
 import ETHCore
 class AccountViewModel: ViewModel {
 
-    // input
     var wallet: EthereumWallet!
     private var repositry: BalanceRepository!
 
-    // output
     let address = BehaviorRelay<String>(value: "")
     let balance = BehaviorRelay<String>(value: "")
 

@@ -12,16 +12,11 @@ import ETHCore
 
 class SigningViewModel: ViewModel {
 
-    // input
     let msg = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!
     let qrCodeSbj = PublishSubject<UIImage>()
     private var wallet: EthereumWallet!
     private var repositry: SigningRepository!
-
-    // output
-
-    // internal
 
     init(_ wallet: EthereumWallet, repositry: SigningRepository) {
         super.init()

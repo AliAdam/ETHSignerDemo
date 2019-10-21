@@ -12,14 +12,9 @@ import ETHCore
 
 class SetupViewModel: ViewModel {
 
-    // input
     let privateKey = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!
     let ethereumWalletSbj = PublishSubject<EthereumWallet>()
-
-    // output
-
-    // internal
 
     override init() {
         super.init()

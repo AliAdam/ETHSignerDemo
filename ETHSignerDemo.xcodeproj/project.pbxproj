@@ -203,10 +203,10 @@
 		41573FB7235B9E85005197BB /* AccountScreen */ = {
 			isa = PBXGroup;
 			children = (
-				41573FB8235B9EA7005197BB /* AccountRouter.swift */,
 				41573FB9235B9EA7005197BB /* AccountViewController.swift */,
-				41573FBA235B9EA7005197BB /* AccountBuilder.swift */,
 				41573FBB235B9EA7005197BB /* AccountViewModel.swift */,
+				41573FBA235B9EA7005197BB /* AccountBuilder.swift */,
+				41573FB8235B9EA7005197BB /* AccountRouter.swift */,
 			);
 			path = AccountScreen;
 			sourceTree = "<group>";
@@ -225,10 +225,10 @@
 		416625FA235CC0C0008DD38C /* SigningScreen */ = {
 			isa = PBXGroup;
 			children = (
-				416625FD235CC146008DD38C /* SigningRouter.swift */,
 				416625FE235CC146008DD38C /* SigningViewController.swift */,
-				416625FF235CC146008DD38C /* SigningBuilder.swift */,
 				41662600235CC146008DD38C /* SigningViewModel.swift */,
+				416625FF235CC146008DD38C /* SigningBuilder.swift */,
+				416625FD235CC146008DD38C /* SigningRouter.swift */,
 			);
 			path = SigningScreen;
 			sourceTree = "<group>";
@@ -244,10 +244,10 @@
 		416625FC235CC0E8008DD38C /* SignatureScreen */ = {
 			isa = PBXGroup;
 			children = (
-				41662609235CD22F008DD38C /* SignatureRouter.swift */,
 				4166260A235CD22F008DD38C /* SignatureViewController.swift */,
-				4166260B235CD22F008DD38C /* SignatureBuilder.swift */,
 				4166260C235CD22F008DD38C /* SignatureViewModel.swift */,
+				4166260B235CD22F008DD38C /* SignatureBuilder.swift */,
+				41662609235CD22F008DD38C /* SignatureRouter.swift */,
 			);
 			path = SignatureScreen;
 			sourceTree = "<group>";
@@ -255,10 +255,10 @@
 		41662611235CDDA2008DD38C /* Verification */ = {
 			isa = PBXGroup;
 			children = (
-				41662612235CDDDD008DD38C /* VerificationBuilder.swift */,
-				41662613235CDDDE008DD38C /* VerificationRouter.swift */,
 				41662614235CDDDE008DD38C /* VerificationViewController.swift */,
 				41662615235CDDDE008DD38C /* VerificationViewModel.swift */,
+				41662612235CDDDD008DD38C /* VerificationBuilder.swift */,
+				41662613235CDDDE008DD38C /* VerificationRouter.swift */,
 			);
 			path = Verification;
 			sourceTree = "<group>";
@@ -423,10 +423,10 @@
 		418E3617235B6EC100D6EB3E /* SetupScreen */ = {
 			isa = PBXGroup;
 			children = (
-				41573FAF235B8110005197BB /* SetupRouter.swift */,
 				41573FB0235B8110005197BB /* SetupViewController.swift */,
-				41573FB1235B8110005197BB /* SetupBuilder.swift */,
 				41573FB2235B8110005197BB /* SetupViewModel.swift */,
+				41573FB1235B8110005197BB /* SetupBuilder.swift */,
+				41573FAF235B8110005197BB /* SetupRouter.swift */,
 			);
 			path = SetupScreen;
 			sourceTree = "<group>";

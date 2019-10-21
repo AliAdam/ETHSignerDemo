@@ -12,16 +12,11 @@ import ETHCore
 
 class VerificationViewModel: ViewModel {
 
-    // input
     let msg = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!
     let isValidSignature = PublishSubject<Bool>()
     private var wallet: EthereumWallet!
     private var repositry: VerificationRepository!
-
-    // output
-
-    // internal
 
     init(_ wallet: EthereumWallet, repositry: VerificationRepository) {
         super.init()

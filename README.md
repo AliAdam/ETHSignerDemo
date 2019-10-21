@@ -22,7 +22,7 @@ if the Scene needs some initial data it is injected into the Builder who then in
 
 
 An important point in MVVM is that it uses a binder as communication tool between View and ViewModel layers.
-A technique named `Data Binding` is used with RxSwift . 
+A technique named `Data Binding` is used with `RxSwift` . 
 
 ### Repository
 Implement repository  Pattren to give the viewModel one entry point for loading data from server or from mockups for unit testing .
@@ -74,16 +74,10 @@ return rawValue.capitalized
 }
 }
 ```
-
-
 then  when ever you want to use it call it like this   
 ```
 let viewController : AccountViewController = UIStoryboard.storyboard(.main).instantiateViewController()
 ```
-
-
-
-
 
 ## Libraries
 ### ETHSignerDemo Target 
