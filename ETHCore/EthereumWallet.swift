@@ -18,8 +18,8 @@ public class EthereumWallet {
         createKeystoreManager()
     }
 
-    public func getAddress() -> EthereumAddress {
-        return address
+    public func getAddress() -> String {
+        return address.address
     }
 }
 

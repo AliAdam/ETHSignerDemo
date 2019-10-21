@@ -32,10 +32,9 @@ private extension AccountViewModel {
 
     func setupRx() {
         getBalance()
+        address.accept(wallet.getAddress())
     }
     func getBalance() {
-        let ethAddress = wallet.getAddress()
-        address.accept(ethAddress.address)
         self.activityIndicatorSubject.onNext(true)
         repositry.getBalance(wallet: wallet) { response in
             self.activityIndicatorSubject.onNext(false)
