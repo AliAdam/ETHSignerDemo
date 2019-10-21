@@ -14,11 +14,7 @@ public typealias ETHAddress = EthereumAddress
 public typealias ETHKeyStore = PlainKeystore
 
 public class EthereumCore {
-    private static let web3 = EthereumWallet(privateKey: "")!.web3Provider
-    private static let ethereumClient = web3.eth
 
-    init(privatKey: String) {
-    }
     public static func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
         do {
             let address = wallet.address!
