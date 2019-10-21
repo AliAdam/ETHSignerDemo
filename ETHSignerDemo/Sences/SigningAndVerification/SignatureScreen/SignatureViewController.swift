@@ -35,7 +35,7 @@ class SignatureViewController: ViewController {
 private extension SignatureViewController {
 
     func setupViews() {
-
+        self.title = LocalizableWords.signature
     }
 
     func setupLayout() {

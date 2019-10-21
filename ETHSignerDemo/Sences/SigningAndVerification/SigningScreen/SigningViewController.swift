@@ -34,7 +34,6 @@ class SigningViewController: ViewController {
 private extension SigningViewController {
 
     func setupViews() {
-        showNavBar()
         self.title = LocalizableWords.signing
     }
 

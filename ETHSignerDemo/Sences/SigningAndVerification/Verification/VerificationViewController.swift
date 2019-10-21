@@ -34,7 +34,6 @@ class VerificationViewController: ViewController {
 private extension VerificationViewController {
 
     func setupViews() {
-        showNavBar()
         self.title = LocalizableWords.verification
     }
 

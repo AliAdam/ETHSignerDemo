@@ -21,5 +21,10 @@ struct LocalizableWords {
     static var signing = "Signing"
     static var verification = "Verification"
     static var qrCodeGenratorError = "Cann't create QR Code From Signed Message"
+    static var signature = "Signature"
+    static var qrCodeReader = "QRCode Reader"
+
+
+
 
 }

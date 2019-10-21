@@ -17,6 +17,7 @@ extension QRCodeReaderViewController {
             $0.showOverlayView        = true
         }
         let  readerVC  = QRCodeReaderViewController(builder: builder)
+        readerVC.title = LocalizableWords.qrCodeReader
         return readerVC
     }
 }
