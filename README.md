@@ -2,6 +2,7 @@
 
 ### Ethereum signer  APP ,  MVVM  + RxSwift  implementation in iOS 
 
+### Xcode 11
 
 ### MVVM architecture + Router
 MVVM (Model-View-ViewModel) is derived from MVC(Model-View-Controller).
