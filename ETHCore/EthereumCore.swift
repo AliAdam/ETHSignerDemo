@@ -53,6 +53,5 @@ public class EthereumCore {
                 completionHandler(.failure(error))
             }
         }
-        completionHandler(.success(false))
     }
 }
