@@ -18,7 +18,7 @@ final class SetupViewModelTests: XCTestCase {
 
     override func setUp() {
         viewModel = SetupViewModel()
-            }
+    }
 
     override func tearDown() {
         viewModel = nil
