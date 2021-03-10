@@ -1,6 +1,9 @@
 # ETHSignerDemo
 
 ### Ethereum signer  APP ,  MVVM  + RxSwift  implementation in iOS 
+A simple app to sign text messages with Ethereum private key and to verify them.
+The app allows a user to enter Ethereum private key, and to display the account balance on the Rinkeby network.
+It also allows a user to sign any message with the user’s private key and to check if a provided signature with the initial message is something that a user signed before.
 
 ### Xcode 11
 
