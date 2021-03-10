@@ -10,23 +10,20 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SignatureViewController: ViewController {
-    fileprivate var viewModel: SignatureViewModel!
-    fileprivate var router: SignatureRouter!
-    fileprivate let disposeBag = DisposeBag()
+final class SignatureViewController: ViewController {
+    private var viewModel: SignatureViewModel!
+    private let disposeBag = DisposeBag()
     @IBOutlet weak var msgLBL: UILabel!
     @IBOutlet weak var qrCodeIMGV: UIImageView!
 
-    func set(withViewModel viewModel: SignatureViewModel, router: SignatureRouter) {
+    func set(withViewModel viewModel: SignatureViewModel) {
         self.viewModel = viewModel
-        self.router = router
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupViews()
-        setupLayout()
         setupRx()
     }
 }
@@ -36,10 +33,6 @@ private extension SignatureViewController {
 
     func setupViews() {
         self.title = LocalizableWords.signature
-    }
-
-    func setupLayout() {
-
     }
 
     func setupRx() {

@@ -7,15 +7,11 @@
 //
 
 import Foundation
-import Web3swift
-import secp256k1_swift
+import web3swift
 
-public class EthereumCore {
-
+public final class EthereumCore {
     public static let `default` = EthereumCore()
-
     private init() {}
-
     public func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
         do {
             let address = wallet.address!
@@ -37,21 +33,23 @@ public class EthereumCore {
             completionHandler(.failure(error))
         }
     }
-    //verify personal message
+    // verify personal message
     public func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
-        if let signature = Data(base64Encoded: qrResultString),
-            let unmarshalledSignature = SECP256K1.unmarshalSignature(signatureData: signature), let msgData = message.data(using: .utf8) {
-            print("V = " + String(unmarshalledSignature.v))
-            //            print("R = " + Data(unmarshalledSignature.r).toHexString())
-            //            print("S = " + Data(unmarshalledSignature.s).toHexString())
-            //            print("Personal hash = " + Web3.Utils.hashPersonalMessage(message.data(using: .utf8)!)!.toHexString())
-            do {
-                let address = wallet.address!
-                let recoveredSigner = try wallet.web3Provider.personal.ecrecover(personalMessage: msgData, signature: signature)
-                completionHandler(.success(address == recoveredSigner))
-            } catch {
-                completionHandler(.failure(error))
-            }
+        guard let signature = Data(base64Encoded: qrResultString),
+            let unmarshalledSignature = SECP256K1.unmarshalSignature(signatureData: signature), let msgData = message.data(using: .utf8) else {
+                completionHandler(.success(false))
+                return
+        }
+        print("V = " + String(unmarshalledSignature.v))
+        print("R = " + Data(unmarshalledSignature.r).toHexString())
+        print("S = " + Data(unmarshalledSignature.s).toHexString())
+        print("Personal hash = " + Web3.Utils.hashPersonalMessage(message.data(using: .utf8)!)!.toHexString())
+        do {
+            let address = wallet.address!
+            let recoveredSigner = try wallet.web3Provider.personal.ecrecover(personalMessage: msgData, signature: signature)
+            completionHandler(.success(address == recoveredSigner))
+        } catch {
+            completionHandler(.failure(error))
         }
     }
 }

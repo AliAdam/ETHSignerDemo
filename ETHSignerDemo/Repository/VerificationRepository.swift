@@ -12,7 +12,7 @@ protocol VerificationRepository {
     func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void))
 }
 
-class RemoteVerificationRepository: VerificationRepository {
+final class RemoteVerificationRepository: VerificationRepository {
     func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
         DispatchQueue.global(qos: .userInitiated).async {
             EthereumCore.default.verifyMessage(message: message, qrResultString: qrResultString, wallet: wallet,  completionHandler: completionHandler)
@@ -20,7 +20,7 @@ class RemoteVerificationRepository: VerificationRepository {
        }
 }
 
-class MockupVerificationRepository: VerificationRepository, MockUpWalletAndAddress {
+final class MockupVerificationRepository: VerificationRepository, MockUpWalletAndAddress {
     func verifyMessage(message: String, qrResultString: String, wallet: EthereumWallet,  completionHandler: @escaping((Result<Bool,Error>) -> Void)) {
         completionHandler(.success(true))
     }

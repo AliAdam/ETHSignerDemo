@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SplashViewController: ViewController {
+final class SplashViewController: ViewController {
     private let viewModel = SplashViewModel()
     private let router =  SplashRouter()
     private let disposeBag = DisposeBag()

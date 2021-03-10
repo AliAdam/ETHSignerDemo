@@ -10,7 +10,7 @@ import RxSwift
 import RxRelay
 import ETHCore
 
-class VerificationViewModel: ViewModel {
+final class VerificationViewModel: ViewModel {
 
     let msg = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!

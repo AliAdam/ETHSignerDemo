@@ -10,7 +10,7 @@ import XCTest
 @testable import ETHSignerDemo
 import RxSwift
 
-class SplashViewModelTests: XCTestCase {
+final class SplashViewModelTests: XCTestCase {
 
     let disposeBag = DisposeBag()
     var viewModel: SplashViewModel!
@@ -21,7 +21,7 @@ class SplashViewModelTests: XCTestCase {
 
     override func tearDown() {
         viewModel = nil
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // Put teardown code here. This method is called after the invocation of each test method in the final class.
     }
     func testOpenSetupScreen() {
         viewModel.networkSubject.onNext(true)

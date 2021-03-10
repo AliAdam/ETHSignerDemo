@@ -10,7 +10,7 @@ import UIKit
 
 /// add toast view on top of currunt window
 /// used when to show msg when there is no connection
-class ToastView: UIView {
+final class ToastView: UIView {
 
     private var label : UILabel!
 

@@ -9,7 +9,7 @@
 import RxSwift
 import RxRelay
 import ETHCore
-class AccountViewModel: ViewModel {
+final class AccountViewModel: ViewModel {
 
     var wallet: EthereumWallet!
     private var repositry: BalanceRepository!

@@ -12,7 +12,7 @@ protocol SigningRepository {
     func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void))
 }
 
-class RemoteSigningRepository: SigningRepository {
+final class RemoteSigningRepository: SigningRepository {
     func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void)) {
         DispatchQueue.global(qos: .userInitiated).async {
             EthereumCore.default.signPersonalMessage(message: message, wallet: wallet, completionHandler: completionHandler)
@@ -20,7 +20,7 @@ class RemoteSigningRepository: SigningRepository {
        }
 }
 
-class MockupSigningRepository: SigningRepository, MockUpWalletAndAddress {
+final class MockupSigningRepository: SigningRepository, MockUpWalletAndAddress {
     func signPersonalMessage(message:String, wallet: EthereumWallet, completionHandler: @escaping((Result<Data,Error>) -> Void)) {
         completionHandler(.success(Data()))
     }

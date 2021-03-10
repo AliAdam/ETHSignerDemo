@@ -10,11 +10,11 @@ import UIKit
 extension UINavigationController {
 
     @IBInspectable var backgroundColor: UIColor {
-        set {
-            self.view.backgroundColor = newValue
-        }
         get {
             return self.view.backgroundColor ?? UIColor.black
+        }
+        set {
+            self.view.backgroundColor = newValue
         }
     }
 

@@ -12,10 +12,8 @@ struct SignatureBuilder {
 
     static func viewController(_ qrCode: UIImage, _ msg: String) -> UIViewController {
         let viewModel = SignatureViewModel(qrCode, msg)
-        let router = SignatureRouter()
         let viewController: SignatureViewController =  UIStoryboard.storyboard(.signing).instantiateViewController()
-        router.viewController = viewController
-        viewController.set(withViewModel: viewModel, router: router)
+        viewController.set(withViewModel: viewModel)
         return viewController
     }
 }

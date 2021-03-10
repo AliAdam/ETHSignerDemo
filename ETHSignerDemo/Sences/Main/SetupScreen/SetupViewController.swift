@@ -10,10 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SetupViewController: ViewController {
-    fileprivate var viewModel: SetupViewModel!
-    fileprivate var router: SetupRouter!
-    fileprivate let disposeBag = DisposeBag()
+final class SetupViewController: ViewController {
+    private var viewModel: SetupViewModel!
+    private var router: SetupRouter!
+    private let disposeBag = DisposeBag()
 
     @IBOutlet weak var privatKeyTXTF: UITextField!
     @IBOutlet weak var doneBTN: UIButton!

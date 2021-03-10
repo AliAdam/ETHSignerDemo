@@ -9,11 +9,10 @@
 import Foundation
 import UIKit
 
-class SigningRouter: Router {
+final class SigningRouter: Router {
 
     func navigateToSignatureScreen(_ qrCode: UIImage, _ msg: String) {
         let controller = SignatureBuilder.viewController(qrCode, msg)
         viewController?.navigationController?.pushViewController(controller, animated: true)
-
     }
 }

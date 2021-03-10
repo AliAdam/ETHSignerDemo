@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QRCodeGenerator {
+final class QRCodeGenerator {
     static let `default` = QRCodeGenerator()
     private init() {}
     func generateQRCode(message: Data) -> UIImage? {

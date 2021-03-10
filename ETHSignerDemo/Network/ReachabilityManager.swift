@@ -6,7 +6,7 @@ public protocol NetworkStatusListener : class {
     func networkStatusDidChange(status: Reachability.Connection)
 }
 
-class ReachabilityManager: NSObject {
+final class ReachabilityManager: NSObject {
 
     static let shared = ReachabilityManager()
 

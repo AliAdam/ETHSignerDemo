@@ -8,7 +8,7 @@
 
 import RxSwift
 
-class SplashViewModel:ViewModel {
+final class SplashViewModel:ViewModel {
 
     // MARK: Variable
     let networkSubject = BehaviorSubject<Bool>(value: false)

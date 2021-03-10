@@ -6,8 +6,8 @@
 //  Copyright © 2019 AliAdam. All rights reserved.
 //
 
-import Web3swift
-public class EthereumWallet {
+import web3swift
+public final class EthereumWallet {
 
     let web3Provider = Web3.InfuraRinkebyWeb3()
     var keyStore: PlainKeystore!

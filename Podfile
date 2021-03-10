@@ -4,14 +4,13 @@
 target 'ETHSignerDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  
   inhibit_all_warnings!
 
   # Pods for ETHSignerDemo
-  pod 'RxSwift', '5.0.0'
-  pod 'RxCocoa', '5.0.0'
+  pod 'RxSwift', '6.1.0'
+  pod 'RxCocoa', '6.1.0'
   pod 'ReachabilitySwift', '5.0.0'
-  pod 'SwiftLint', '0.35.0'
+  pod 'SwiftLint', '0.43.0'
   pod 'QRCodeReader.swift', '10.1.0'
 
   target 'ETHSignerDemoTests' do
@@ -28,7 +27,7 @@ target 'ETHCore' do
   use_frameworks!
   inhibit_all_warnings!
 
-  pod 'web3swift', '2.1.6'
+  pod 'web3swift', '2.3.0'
 
 end
 

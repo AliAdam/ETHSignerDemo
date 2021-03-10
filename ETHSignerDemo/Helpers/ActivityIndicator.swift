@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 /// add Activity Indicator View on navigationItem titleView
-class ActivityIndicator {
+final class ActivityIndicator {
     private init() {}
 
     static let shared = ActivityIndicator()

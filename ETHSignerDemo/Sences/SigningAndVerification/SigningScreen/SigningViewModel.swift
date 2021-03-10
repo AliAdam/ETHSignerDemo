@@ -10,7 +10,7 @@ import RxSwift
 import RxRelay
 import ETHCore
 
-class SigningViewModel: ViewModel {
+final class SigningViewModel: ViewModel {
 
     let msg = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!

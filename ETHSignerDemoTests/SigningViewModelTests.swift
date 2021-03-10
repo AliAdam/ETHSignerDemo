@@ -10,7 +10,7 @@ import XCTest
 @testable import ETHSignerDemo
 import RxSwift
 
-class SigningViewModelTests: XCTestCase {
+final class SigningViewModelTests: XCTestCase {
     let disposeBag = DisposeBag()
     var viewModel: SigningViewModel!
     let repo = MockupSigningRepository()

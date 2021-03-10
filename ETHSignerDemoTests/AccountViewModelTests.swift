@@ -10,7 +10,7 @@ import XCTest
 @testable import ETHSignerDemo
 import RxSwift
 
-class AccountViewModelTests: XCTestCase {
+final class AccountViewModelTests: XCTestCase {
 
     let disposeBag = DisposeBag()
     var viewModel: AccountViewModel!

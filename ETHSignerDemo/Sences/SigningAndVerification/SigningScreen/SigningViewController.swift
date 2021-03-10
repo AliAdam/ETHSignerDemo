@@ -10,10 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SigningViewController: ViewController {
-    fileprivate var viewModel: SigningViewModel!
-    fileprivate var router: SigningRouter!
-    fileprivate let disposeBag = DisposeBag()
+final class SigningViewController: ViewController {
+    private var viewModel: SigningViewModel!
+    private var router: SigningRouter!
+    private let disposeBag = DisposeBag()
 
     @IBOutlet weak var msgTXTF: UITextField!
     @IBOutlet weak var doneBTN: UIButton!

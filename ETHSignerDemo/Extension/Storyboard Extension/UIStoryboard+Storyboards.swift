@@ -27,7 +27,7 @@ extension UIStoryboard {
         self.init(name: storyboard.filename, bundle: bundle)
     }
 
-    // MARK: - Class Functions
+    // MARK: - final class Functions
 
     class func storyboard(_ storyboard: Storyboard, bundle: Bundle? = nil) -> UIStoryboard {
         return UIStoryboard(name: storyboard.filename, bundle: bundle)

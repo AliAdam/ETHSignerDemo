@@ -10,7 +10,7 @@ import XCTest
 @testable import ETHSignerDemo
 import RxSwift
 
-class SetupViewModelTests: XCTestCase {
+final class SetupViewModelTests: XCTestCase {
 
     let disposeBag = DisposeBag()
     var viewModel: SetupViewModel!
@@ -22,7 +22,7 @@ class SetupViewModelTests: XCTestCase {
 
     override func tearDown() {
         viewModel = nil
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // Put teardown code here. This method is called after the invocation of each test method in the final class.
     }
     func testInvalidPrivateKey() {
         viewModel.privateKey.accept("sdfghtyrewrtytrfdsfgh")

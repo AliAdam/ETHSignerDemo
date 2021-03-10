@@ -23,7 +23,6 @@
 		41662604235CC146008DD38C /* SigningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662600235CC146008DD38C /* SigningViewModel.swift */; };
 		41662606235CC29C008DD38C /* Signing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41662605235CC29C008DD38C /* Signing.storyboard */; };
 		41662608235CCF49008DD38C /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662607235CCF49008DD38C /* QRCodeGenerator.swift */; };
-		4166260D235CD230008DD38C /* SignatureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41662609235CD22F008DD38C /* SignatureRouter.swift */; };
 		4166260E235CD230008DD38C /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166260A235CD22F008DD38C /* SignatureViewController.swift */; };
 		4166260F235CD230008DD38C /* SignatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166260B235CD22F008DD38C /* SignatureBuilder.swift */; };
 		41662610235CD230008DD38C /* SignatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166260C235CD22F008DD38C /* SignatureViewModel.swift */; };
@@ -120,7 +119,6 @@
 		41662600235CC146008DD38C /* SigningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewModel.swift; sourceTree = "<group>"; };
 		41662605235CC29C008DD38C /* Signing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signing.storyboard; sourceTree = "<group>"; };
 		41662607235CCF49008DD38C /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
-		41662609235CD22F008DD38C /* SignatureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureRouter.swift; sourceTree = "<group>"; };
 		4166260A235CD22F008DD38C /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
 		4166260B235CD22F008DD38C /* SignatureBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureBuilder.swift; sourceTree = "<group>"; };
 		4166260C235CD22F008DD38C /* SignatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewModel.swift; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 				4166260A235CD22F008DD38C /* SignatureViewController.swift */,
 				4166260C235CD22F008DD38C /* SignatureViewModel.swift */,
 				4166260B235CD22F008DD38C /* SignatureBuilder.swift */,
-				41662609235CD22F008DD38C /* SignatureRouter.swift */,
 			);
 			path = SignatureScreen;
 			sourceTree = "<group>";
@@ -568,7 +565,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = AliAdam;
 				TargetAttributes = {
 					418E35B8235B6B5F00D6EB3E = {
@@ -771,7 +768,6 @@
 				41D54905235E27600099D4A2 /* VerificationRepository.swift in Sources */,
 				418E362B235B6EC100D6EB3E /* UIViewController+StoryboardIdentifier.swift in Sources */,
 				418E363F235B6EC100D6EB3E /* Colors.swift in Sources */,
-				4166260D235CD230008DD38C /* SignatureRouter.swift in Sources */,
 				418E362D235B6EC100D6EB3E /* StringExtension.swift in Sources */,
 				41662618235CDDDE008DD38C /* VerificationViewController.swift in Sources */,
 				418E362A235B6EC100D6EB3E /* UIStoryboard+Storyboards.swift in Sources */,
@@ -872,6 +868,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -932,6 +929,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -969,6 +967,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXQFTMS2M;
 				INFOPLIST_FILE = "$(SRCROOT)/ETHSignerDemo/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -989,6 +988,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXQFTMS2M;
 				INFOPLIST_FILE = "$(SRCROOT)/ETHSignerDemo/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1061,6 +1061,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ETHCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1092,6 +1093,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ETHCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

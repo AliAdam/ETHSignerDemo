@@ -85,7 +85,7 @@ let viewController : AccountViewController = UIStoryboard.storyboard(.main).inst
 * [RxSwift '5.0.0' + RxCocoa '5.0.0'] to do "data binding" job which binds `ViewModel` and `View`
 * [ReachabilitySwift  '4.3.1'] to listen to network status change 
 * ['SwiftLint' '0.33.0'] to enforce Swift style and conventions
-  * ['QRCodeReader.swift' '10.1.0'] Qr Code reader 
+* ['QRCodeReader.swift' '10.1.0'] Qr Code reader 
 
 ### ETHCore Target 
 

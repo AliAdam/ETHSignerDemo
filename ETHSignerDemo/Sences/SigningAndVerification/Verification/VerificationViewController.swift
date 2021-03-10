@@ -10,10 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class VerificationViewController: ViewController {
-    fileprivate var viewModel: VerificationViewModel!
-    fileprivate var router: VerificationRouter!
-    fileprivate let disposeBag = DisposeBag()
+final class VerificationViewController: ViewController {
+    private var viewModel: VerificationViewModel!
+    private var router: VerificationRouter!
+    private let disposeBag = DisposeBag()
 
     @IBOutlet weak var msgTXTF: UITextField!
     @IBOutlet weak var doneBTN: UIButton!

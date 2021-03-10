@@ -12,7 +12,7 @@ protocol BalanceRepository {
     func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void))
 }
 
-class RemoteBalanceRepository: BalanceRepository {
+final class RemoteBalanceRepository: BalanceRepository {
     func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
         DispatchQueue.global(qos: .userInitiated).async {
             EthereumCore.default.getBalance(wallet: wallet, completionHandler: completionHandler)
@@ -20,7 +20,7 @@ class RemoteBalanceRepository: BalanceRepository {
     }
 }
 
-class MockupBalanceRepository: BalanceRepository, MockUpWalletAndAddress {
+final class MockupBalanceRepository: BalanceRepository, MockUpWalletAndAddress {
     func getBalance(wallet: EthereumWallet, completionHandler: @escaping((Result<String,Error>) -> Void)) {
         completionHandler(.success("0"))
     }

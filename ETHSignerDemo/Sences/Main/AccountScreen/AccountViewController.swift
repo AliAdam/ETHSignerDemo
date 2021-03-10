@@ -10,10 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class AccountViewController: ViewController {
-    fileprivate var viewModel: AccountViewModel!
-    fileprivate var router: AccountRouter!
-    fileprivate let disposeBag = DisposeBag()
+final class AccountViewController: ViewController {
+    private var viewModel: AccountViewModel!
+    private var router: AccountRouter!
+    private let disposeBag = DisposeBag()
     @IBOutlet weak var addressLBL: UILabel!
     @IBOutlet weak var balanceLBL: UILabel!
     @IBOutlet weak var signingBTN: UIButton!

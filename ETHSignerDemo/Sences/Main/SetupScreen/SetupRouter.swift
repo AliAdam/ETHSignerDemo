@@ -8,7 +8,7 @@
 
 import Foundation
 import  ETHCore
-class SetupRouter: Router {
+final class SetupRouter: Router {
 
     func navigateToAccountScreen(_ wallet:EthereumWallet) {
         let controller = AccountBuilder.viewController(wallet)

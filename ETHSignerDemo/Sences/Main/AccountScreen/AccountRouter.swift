@@ -8,7 +8,7 @@
 
 import Foundation
 import ETHCore
-class AccountRouter: Router {
+final class AccountRouter: Router {
 
     func navigateToSigningScreen(_ wallet:EthereumWallet) {
             let controller = SigningBuilder.viewController(wallet)

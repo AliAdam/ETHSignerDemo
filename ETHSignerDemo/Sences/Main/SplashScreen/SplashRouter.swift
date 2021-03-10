@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SplashRouter : Router {
+final class SplashRouter : Router {
 
     func navigateToSetupScreen() {
        let controller = SetupBuilder.viewController()

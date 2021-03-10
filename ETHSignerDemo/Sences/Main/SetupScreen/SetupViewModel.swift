@@ -10,7 +10,7 @@ import RxSwift
 import RxRelay
 import ETHCore
 
-class SetupViewModel: ViewModel {
+final class SetupViewModel: ViewModel {
 
     let privateKey = BehaviorRelay<String>(value: "")
     var isValid: Observable<Bool>!

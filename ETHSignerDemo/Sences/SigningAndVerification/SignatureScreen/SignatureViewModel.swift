@@ -8,7 +8,7 @@
 
 import RxSwift
 
-class SignatureViewModel: ViewModel {
+final class SignatureViewModel: ViewModel {
 
     let msgSbj = BehaviorSubject<String>(value:"")
     let qrCodeSbj = BehaviorSubject<UIImage>(value: UIImage())
@@ -20,12 +20,4 @@ class SignatureViewModel: ViewModel {
 
     }
 
-}
-
-// MARK: Setup
-private extension SignatureViewModel {
-
-    func setupRx() {
-
-    }
 }

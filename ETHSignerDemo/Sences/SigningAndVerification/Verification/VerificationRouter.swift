@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import QRCodeReader
 
-class VerificationRouter: Router {
+final class VerificationRouter: Router {
 
     func presentQRCodeScreen(completionHandler: @escaping ((String) -> Void)) {
         let  readerVC  = QRCodeReaderViewController.getDefaultInstance()

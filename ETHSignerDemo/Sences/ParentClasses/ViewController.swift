@@ -57,6 +57,7 @@ class ViewController: UIViewController {
 extension ViewController {
     /// show alert on controller
     func presentAlertWithTitle(title: String, message: String, options: String..., completion: @escaping (Int) -> Void) {
+        DispatchQueue.main.async {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         for (index, option) in options.enumerated() {
             alertController.addAction(UIAlertAction.init(title: option, style: .default, handler: { _ in
@@ -64,5 +65,6 @@ extension ViewController {
             }))
         }
         self.present(alertController, animated: true, completion: nil)
+        }
     }
 }
